@@ -7,7 +7,7 @@ async function j(p){const r=await fetch(B+p+'?_='+Date.now());if(!r.ok)throw r.s
 function show(m){$('home').hidden=!!m;$('coin').hidden=!m;if(m)coin(m)}
 async function tick(){try{const s=await j('state.json'),c=await j('chart.json'),a=await j('activity.json');let t=null;try{t=await j('stats.json')}catch(e){}
 $('mode').textContent=s.mode+(s.paused?' · ⏸ PAUSE':'');$('mode').className='paper'+(s.paused?' pz':'');const fresh=Date.now()/1000-s.ts<300;$('live').className='live'+(fresh?'':' off');$('live').textContent=fresh?'● Live':'● Hors ligne';
-$('bal').textContent='$'+f(s.stack);const d=s.stack-s.start;$('mult').textContent=(s.stack/s.start).toFixed(2)+'x';$('eqlbl').textContent='Equity · départ $'+s.start;
+const SN=s.sn_stack!=null;const cs=SN?s.sn_stack:s.stack,c0=SN?s.sn_start:s.start;$('bal').textContent='$'+f(cs);const d=cs-c0;$('mult').textContent=(cs/c0).toFixed(2)+'x';$('eqlbl').textContent=(SN?'Capital sniper · départ $'+c0+' · Exécutant $'+f(s.stack):'Equity · départ $'+s.start);
 $('pnl').innerHTML=`<span class="pill ${d>=0?'up':'dn'}">${d>=0?'+':''}$${f(d)} (${(d/s.start*100).toFixed(1)}%)</span> · ${s.closed.length} trades clos`;
 line($('chart'),c.map(r=>[r.ts,r.value]));
 const J=s.journal||[],fp=x=>x==null?'–':(x>=0?'+':'')+(+x).toFixed(1)+'%';$('jsum').textContent=J.length?`${J.length} trades · ${J.filter(x=>(x.close_calls||[]).length).length} ⚠️ de justesse`:'';
