@@ -1,0 +1,4 @@
+body{margin:0;background:#0b0d10;color:#d7dde4;font:14px ui-monospace,Menlo,monospace;padding:env(safe-area-inset-top) 12px 40px}
+header{padding:12px 0;color:#3ddc84}#mode{color:#ff9f43;float:right}#bal{font-size:34px;color:#fff}.up{color:#3ddc84}.dn{color:#ff5c5c}
+canvas{width:100%;background:#11151a;border-radius:10px}h3{color:#8a96a3;font-size:12px;text-transform:uppercase;margin-top:20px}
+.row{background:#11151a;border-radius:8px;padding:10px;margin:6px 0}.row small{color:#8a96a3;display:block}button{background:#1a2027;color:#d7dde4;border:0;padding:8px 12px;border-radius:8px}
