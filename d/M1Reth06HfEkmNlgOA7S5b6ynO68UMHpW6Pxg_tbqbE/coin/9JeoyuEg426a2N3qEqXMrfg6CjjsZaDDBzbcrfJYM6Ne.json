@@ -1,1 +1,1 @@
-{"coin": null, "prices": [], "scans": [], "audits": [], "verdicts": []}
+{"coin": {"mint": "9JeoyuEg426a2N3qEqXMrfg6CjjsZaDDBzbcrfJYM6Ne", "name": null, "symbol": null, "pool": "gecko_new_pools", "migrated_at": 1793823129.1898496, "creator": null, "creator_balance_at_migration": null, "holders": null}, "prices": [{"ts": 1793823139.228567, "price": 6.509e-07}, {"ts": 1793823160.5407014, "price": 6.509e-07}], "scans": [], "audits": [], "verdicts": []}
