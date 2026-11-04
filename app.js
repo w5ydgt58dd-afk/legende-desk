@@ -26,4 +26,4 @@ const mx=Math.max(1,...t.skips.map(x=>x.n));$('skips').innerHTML=t.skips.map(x=>
 }catch(e){$('bal').textContent='hors ligne'}}
 async function coin(m){const c=await j('coin/'+m+'.json');$('ctitle').textContent=(c.coin&&c.coin.symbol||'')+' '+m.slice(0,6)+'…';line($('cchart'),c.prices.map(p=>[p.ts,p.price]));
 $('cbody').innerHTML=c.audits.map(a=>`<div class="row">${a.pass?'✅':'❌'} L${a.layer} ${E(a.name)}<small>${E(a.value_text)}</small></div>`).join('')+c.verdicts.map(v=>`<div class="row">Score ${v.score}<small>alive ${v.alive_6h} organic ${v.organic} flush ${v.flush} chase ${v.chase} · ${E(v.reason)}</small></div>`).join('')}
-tick();setInterval(tick,15000);
+tick();setInterval(tick,15000);document.addEventListener("visibilitychange",()=>{if(!document.hidden)tick()});
