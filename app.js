@@ -1,4 +1,4 @@
-const h=new URLSearchParams(location.hash.slice(1));if(h.get('d')){localStorage.dp=h.get('d');history.replaceState(null,'',location.pathname)}
+const h=new URLSearchParams(location.hash.slice(1));if(h.get('d')){localStorage.dp=h.get('d')}
 const B='d/'+(localStorage.dp||'')+'/';const $=id=>document.getElementById(id);const f=n=>(+n).toFixed(2);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
 const pill=v=>v==null?'':`<span class="pill ${v>=0?'up':'dn'}">${v>=0?'+':''}${Math.abs(v)>=1000?Math.round(v).toLocaleString('fr'):(+v).toFixed(1)}%</span>`;
