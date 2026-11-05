@@ -65,3 +65,11 @@ body.nd-on{background:#000}
 
 .poscard .poshead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .poscard.up b{color:#4ade80}.poscard.dn b{color:#f87171}
+
+.ndf-settings{grid-template-columns:repeat(2,1fr);margin-bottom:14px}
+@media(min-width:480px){.ndf-settings{grid-template-columns:repeat(4,1fr)}}
+#legSettingsCard .ndf-settings{display:grid;gap:10px}
+#legSettingsCard .st{background:#111;border:1px solid #1f1f1f;border-radius:14px;padding:12px}
+#legSettingsCard .st i{display:block;font-style:normal;opacity:.5;font-size:11px;margin-bottom:4px}
+#legSettingsCard .st b{font-size:16px;font-variant-numeric:tabular-nums}
+#legSettingsCard .st b.up{color:#22c55e}

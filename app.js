@@ -1,4 +1,4 @@
-/* build 14 */
+/* build settings-mom-1 */
 const h=new URLSearchParams(location.hash.slice(1));if(h.get('d')){localStorage.dp=h.get('d')}
 const qs=new URLSearchParams(location.search);if(qs.get('d')){localStorage.dp=qs.get('d')}
 const B='d/'+(localStorage.dp||'')+'/';const $=id=>document.getElementById(id);const f=n=>(+n).toFixed(2);
@@ -32,6 +32,22 @@ const ndRows=(nd&&nd.open&&nd.open.length)?nd.open.map(o=>{
   return `<div class="row poscard ${cls}"><div class="poshead"><b>🌙 ${E(o.symbol)}</b> <span class="pill ${cls}">${pct==null?'–':((pct>=0?'+':'')+(+pct).toFixed(1)+'%')}</span> <span class="pill ${cls}">${money(upnl,true)}</span></div><small>Night Desk · mise $${f(o.ticket_usd||0)} · entrée ${entry?entry.toPrecision(4):'–'} · actuel ${cur!=null?cur.toPrecision(4):'–'} · stop ${o.stop_price?(+o.stop_price).toPrecision(4):'–'}</small></div>`;
 }).join(''):'';
 $('pos').innerHTML=(leg||ndRows)?(leg+ndRows):'<div class="row">Aucune position ouverte</div>';
+const LS=s.settings||{}; const LSg=$('legSettings'); const LSsub=$('legSetSub');
+if(LSg){
+  const active=!!LS.momentum_gate_active;
+  const rows=[
+    ['Stop', LS.STOP_PCT!=null?(LS.STOP_PCT+' %'):(LS.stop_pct!=null?(LS.stop_pct+' %'):'–')],
+    ['Trailing', LS.TRAIL_PCT!=null?(LS.TRAIL_PCT+' %'):(LS.trail_pct!=null?(LS.trail_pct+' %'):'–')],
+    ['Max open', LS.MAX_OPEN!=null?String(LS.MAX_OPEN):'–'],
+    ['Score mini', LS.ANALYST_PASS!=null?String(LS.ANALYST_PASS):'–'],
+    ['Mise', LS.POSITION_PCT!=null?(LS.POSITION_PCT+' %'):'–'],
+    ['Momentum', LS.MOMENTUM_TOP_PCT!=null?('top '+LS.MOMENTUM_TOP_PCT+' %'+(LS.MOMENTUM_WINDOW?' · '+LS.MOMENTUM_WINDOW:'')):'–'],
+    ['Gate mom.', active?'actif':'off'],
+  ];
+  LSg.innerHTML=rows.map(([k,v])=>`<div class="st"><i>${k}</i><b class="${k==='Gate mom.'?(active?'up':''):''}">${E(v)}</b></div>`).join('');
+  if(LSsub) LSsub.textContent=(s.nd_style?'ND-style · ':'')+(active?'momentum on':'momentum off');
+}
+
 if(s.nd_style){const el=$('eqlbl'); if(el) el.textContent='Equity Legende (ND-style) · départ $'+(+s.start).toFixed(0)+(s.unrealized!=null?' · latent '+(s.unrealized>=0?'+':'')+'$'+f(s.unrealized):'');}
 $('act').innerHTML=a.slice(0,30).map(r=>`<div class="row" onclick="show('${E(r.mint)}')">${new Date(r.ts*1000).toLocaleTimeString('fr')} <b>${E(r.agent)}</b> ${E(r.title)}<small>${E(r.subtitle)}</small></div>`).join('')||'<div class="row">Rien pour l’instant</div>';
 if(t){$('tick').innerHTML=t.ticker.map(x=>`<span class="ti" onclick="show('${E(x.mint)}')"><b>${E(x.symbol||x.mint.slice(0,4))}</b> $${k(x.liquidity_usd||0)} ${pill(x.h1_change_pct)}</span>`).join('');

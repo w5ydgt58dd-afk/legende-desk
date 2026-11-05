@@ -1,4 +1,4 @@
-/* build fomo-1 */
+/* build settings-mom-1 */
 (function(){
 const slot=document.querySelector('.ndtabs-slot')||document.querySelector('.hero');
 const tb=document.createElement('div');tb.className='ndtabs';
@@ -68,6 +68,21 @@ function buildLog(d){
 
 function heldMin(iso){const m=Math.max(0,(Date.now()-new Date(iso).getTime())/60000);return m<60?Math.round(m)+' min':Math.floor(m/60)+'h'+String(Math.round(m%60)).padStart(2,'0')}
 function px(v){return v==null?'–':(+v).toPrecision(4)}
+function renderSettings(d){
+  const b=$('ndSettings'); if(!b) return;
+  const s=d.settings||{};
+  const active=!!s.momentum_gate_active;
+  const rows=[
+    ['Stop', s.STOP_PCT!=null?(s.STOP_PCT+' %'):'–'],
+    ['Trailing', s.TRAIL_PCT!=null?(s.TRAIL_PCT+' %'):'–'],
+    ['Max open', s.MAX_OPEN!=null?String(s.MAX_OPEN):'–'],
+    ['Score mini', s.ANALYST_PASS!=null?String(s.ANALYST_PASS):'–'],
+    ['Mise', s.POSITION_PCT!=null?(s.POSITION_PCT+' %'):'–'],
+    ['Momentum', s.MOMENTUM_TOP_PCT!=null?('top '+s.MOMENTUM_TOP_PCT+' %'+(s.MOMENTUM_WINDOW?' · '+s.MOMENTUM_WINDOW:'')):'–'],
+    ['Gate mom.', active?'actif':'off'],
+  ];
+  b.innerHTML=rows.map(([k,v])=>`<div class="st"><i>${k}</i><b class="${k==='Gate mom.'?(active?'up':''):''}">${E(v)}</b></div>`).join('');
+}
 function renderPos(d){
   const b=$('ndPos');if(!b)return;const o=d.open||[];
   if(!o.length){b.innerHTML='<div class="ndf-empty">Aucune position ouverte</div>';return}
@@ -107,6 +122,8 @@ async function nd(){
           <div class="st"><i>Open</i><b id="ndOpen">${nOpen}</b></div>
           <div class="st"><i>Trades</i><b id="ndTrades">${(d.counts&&d.counts.fills!=null)?d.counts.fills:((d.fills||[]).length)}</b></div>
         </div>
+        <div class="ndf-logh"><b>Réglages</b><small>papier · live</small></div>
+        <div class="ndf-stats ndf-settings" id="ndSettings"></div>
         <div class="ndf-logh"><b>Positions</b><small>prix live Risk · hors frais</small></div>
         <div class="ndf-pos" id="ndPos"></div>
         <div class="ndf-logh"><b>Copy log</b><small>Paris · newest first</small></div>
