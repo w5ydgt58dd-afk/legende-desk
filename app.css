@@ -15,3 +15,4 @@ header{display:flex;align-items:center;gap:8px}header b{font-size:20px;display:b
 .sk{margin:6px 0;font-size:13px}.sk div{display:flex;justify-content:space-between}.bar{height:4px;background:#3a2414;border-radius:3px}.bar span{display:block;height:100%;background:#f97316;border-radius:3px}
 button{background:#f97316;color:#fff;border:0;border-radius:10px;padding:6px 12px}
 .paper.pz{background:#fbbf24;color:#3a1503}.hs.w{border-left:3px solid #16a34a;padding-left:6px}.hs.l{border-left:3px solid #dc2626;padding-left:6px}.hs small .pill{margin-right:2px}
+.ndtabs{display:flex;gap:8px;margin:10px 12px 0}.ndtabs button{flex:1;padding:8px;border-radius:12px;border:1px solid #3a2414;background:#24140b;color:#fff;font-weight:600}.ndtabs button.on{background:#e8590c}
