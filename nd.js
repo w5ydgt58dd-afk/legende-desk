@@ -135,6 +135,7 @@ async function nd(){
     if(el){el.dataset.start=start; setStack(el, equity)}
     if($('ndSub')) $('ndSub').textContent=`equity (stack ${money(stack)} + latent ${money(unr)})${d.equity_partial?' partiel':''} · à jour ${upd}${d.test_daytime?' · test de jour':''}`;
     if($('ndUnr')){$('ndUnr').textContent=money(unr);$('ndUnr').className=unr>0.005?'up':unr<-0.005?'dn':''}
+    renderSettings(d);
     renderPos(d);
     if($('ndPut')) $('ndPut').textContent=money(start);
     if($('ndPaper')) $('ndPaper').textContent=money(stack);
