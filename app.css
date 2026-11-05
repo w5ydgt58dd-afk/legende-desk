@@ -62,3 +62,6 @@ body.nd-on{background:#000}
 .ndf-pcard .r b{font-size:17px;font-variant-numeric:tabular-nums}
 .ndf-pcard .up,.ndf-pcard .r small.up{background:none;color:#22c55e;opacity:1}.ndf-pcard .dn,.ndf-pcard .r small.dn{background:none;color:#ef4444;opacity:1}
 .ndf-stats .st b.up,.ndf-stats .st b.dn,.ndf-row .up,.ndf-row .dn{background:none}.ndf-row .up{color:#22c55e}.ndf-row .dn{color:#ef4444}
+
+.poscard .poshead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.poscard.up b{color:#4ade80}.poscard.dn b{color:#f87171}

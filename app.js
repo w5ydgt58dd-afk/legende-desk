@@ -1,4 +1,4 @@
-/* build 12 */
+/* build 13 */
 const h=new URLSearchParams(location.hash.slice(1));if(h.get('d')){localStorage.dp=h.get('d')}
 const qs=new URLSearchParams(location.search);if(qs.get('d')){localStorage.dp=qs.get('d')}
 const B='d/'+(localStorage.dp||'')+'/';const $=id=>document.getElementById(id);const f=n=>(+n).toFixed(2);
@@ -16,9 +16,23 @@ line($('chart'),c.map(r=>[r.ts,r.value]));
 const J=s.journal||[],fp=x=>x==null?'–':(x>=0?'+':'')+(+x).toFixed(1)+'%';$('jsum').textContent=J.length?`${J.length} trades · ${J.filter(x=>(x.close_calls||[]).length).length} ⚠️ de justesse`:'';
 $('journal').innerHTML=J.map(x=>{const cc=x.close_calls||[],dt=new Date(x.opened_at*1000).toLocaleString('fr',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});return `<div class="row hs ${x.pnl_usd>0?'w':x.pnl_usd<0?'l':''}" onclick="show('${E(x.mint)}')"><b>${cc.length?'⚠️ ':''}${E(x.symbol||x.mint.slice(0,4))}</b> ${dt} · $${f(x.size_usd)} @ ${(+x.entry_price).toPrecision(4)} · ${x.closed_at?`${E(x.exit_reason)} · ${x.pnl_usd>=0?'+':''}$${f(x.pnl_usd)} (${fp(x.pnl_pct_on_initial)}) · ${Math.round(x.duration_min)} min`:'ouvert'}<small>score ${x.score??'–'} · alive ${x.alive_6h??'–'} · organic ${x.organic??'–'} · chase ${x.chase??'–'}${cc.length?' · ⚠️ '+cc.map(c=>E(c.name)+' '+c.value+(c.kind=='max'?' ≤ ':' ≥ ')+c.threshold).join(', '):''}<br>${E(x.entry_reason||'')}</small></div>`}).join('')||'<div class="row">Aucun trade journalisé</div>';
 
-const leg=s.open.length?s.open.map(p=>`<div class="row" onclick="show('${E(p.mint)}')">${E(p.symbol)} $${f(p.size_usd)} ${pill(p.upnl/(p.tp1_done?p.size_usd/(1-((s.settings||{}).tp1_frac||0.5)):p.size_usd)*100)}<small>stop ${(+p.stop_price).toPrecision(4)}${p.trail_active?' · trail':''}</small></div>`).join(''):'';
-const ndRows=(nd&&nd.open&&nd.open.length)?nd.open.map(o=>{const px=+o.fill_price||+o.peak_price||0;const stop=+o.stop_price||0;return `<div class="row"><b>🌙 ${E(o.symbol)}</b> $${f(o.ticket_usd)} <small>Night Desk · entrée ${px?px.toPrecision(4):'–'} · stop ${stop?stop.toPrecision(4):'–'}</small></div>`}).join(''):'';
+const money=(n,signed)=>{if(n==null||Number.isNaN(+n))return '–';const v=+n;return (signed&&v>=0?'+':'')+'$'+f(v)};
+const leg=s.open.length?s.open.map(p=>{
+  const entry=+p.entry_price||0, cur=(p.last_price!=null?+p.last_price:null);
+  const upnl=(p.upnl!=null?+p.upnl:null);
+  const pct=(p.upnl_pct!=null?+p.upnl_pct:(entry&&cur!=null?((cur/entry-1)*100):null));
+  const cls=pct==null?'':(pct>=0?'up':'dn');
+  const src=p.source==='nd-style'?' · ND-style':'';
+  return `<div class="row poscard ${cls}" onclick="show('${E(p.mint)}')"><div class="poshead"><b>${E(p.symbol||p.mint.slice(0,4))}</b> <span class="pill ${cls}">${pct==null?'–':((pct>=0?'+':'')+(+pct).toFixed(1)+'%')}</span> <span class="pill ${cls}">${money(upnl,true)}</span></div><small>mise $${f(p.size_usd||0)} · entrée ${entry?entry.toPrecision(4):'–'} · actuel ${cur!=null?cur.toPrecision(4):'–'}${p.stop_price?(' · stop '+(+p.stop_price).toPrecision(4)):'|'}${p.trail_active?' · trail':''}${src}</small></div>`;
+}).join(''):'';
+const ndRows=(nd&&nd.open&&nd.open.length)?nd.open.map(o=>{
+  const entry=+o.fill_price||0, cur=(o.last_price!=null?+o.last_price:null);
+  const upnl=(o.upnl_usd!=null?+o.upnl_usd:null), pct=(o.upnl_pct!=null?+o.upnl_pct:null);
+  const cls=pct==null?'':(pct>=0?'up':'dn');
+  return `<div class="row poscard ${cls}"><div class="poshead"><b>🌙 ${E(o.symbol)}</b> <span class="pill ${cls}">${pct==null?'–':((pct>=0?'+':'')+(+pct).toFixed(1)+'%')}</span> <span class="pill ${cls}">${money(upnl,true)}</span></div><small>Night Desk · mise $${f(o.ticket_usd||0)} · entrée ${entry?entry.toPrecision(4):'–'} · actuel ${cur!=null?cur.toPrecision(4):'–'} · stop ${o.stop_price?(+o.stop_price).toPrecision(4):'–'}</small></div>`;
+}).join(''):'';
 $('pos').innerHTML=(leg||ndRows)?(leg+ndRows):'<div class="row">Aucune position ouverte</div>';
+if(s.nd_style){const el=$('eqlbl'); if(el) el.textContent='Equity Legende (ND-style) · départ $'+(+s.start).toFixed(0)+(s.unrealized!=null?' · latent '+(s.unrealized>=0?'+':'')+'$'+f(s.unrealized):'');}
 $('act').innerHTML=a.slice(0,30).map(r=>`<div class="row" onclick="show('${E(r.mint)}')">${new Date(r.ts*1000).toLocaleTimeString('fr')} <b>${E(r.agent)}</b> ${E(r.title)}<small>${E(r.subtitle)}</small></div>`).join('')||'<div class="row">Rien pour l’instant</div>';
 if(t){$('tick').innerHTML=t.ticker.map(x=>`<span class="ti" onclick="show('${E(x.mint)}')"><b>${E(x.symbol||x.mint.slice(0,4))}</b> $${k(x.liquidity_usd||0)} ${pill(x.h1_change_pct)}</span>`).join('');
 const F=t.funnel,ags=[['🔍','#2563eb','Scout','scanne les migrations',`${F.scout.seen} vus`],['⛔','#ea580c','Filter','règles dures + audit',`${F.filter.killed+F.filter.audit_fail} rejetés`],
