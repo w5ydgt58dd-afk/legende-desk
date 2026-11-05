@@ -195,3 +195,9 @@ body.nd-on{background:#0b0d10}
   .ndt-head .kpi{width:100%;text-align:left;margin-left:0}
   .ndt-head .badges{justify-content:flex-start}
 }
+/* Short Squeeze sq1 */
+.sq-band{overflow:hidden;white-space:nowrap;background:#0b0b0b;border-bottom:1px solid #222;padding:6px 0;font:12px ui-monospace,monospace}
+.sq-run{display:inline-block;animation:sqm 60s linear infinite}.sq-t{margin:0 14px}.sq-t i{font-style:normal}.sq-t em{opacity:.5;font-size:10px}
+@keyframes sqm{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.sq-row{display:flex;gap:8px;align-items:center;font-size:13px;padding:5px 0;border-bottom:1px solid #222}.sq-row b{min-width:62px}.sq-row small{margin-left:auto;opacity:.7}
+.sq-row .up,.sq-t .up{color:#22c55e}.sq-row .dn,.sq-t .dn{color:#ef4444}
