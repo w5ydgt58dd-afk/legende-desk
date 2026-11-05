@@ -55,3 +55,9 @@ body.nd-on{background:#000}
 .ndtabs{display:flex;gap:8px;margin:10px 12px 0;position:sticky;top:0;z-index:5;background:#000;padding-bottom:4px}
 .ndtabs button{flex:1;padding:8px;border-radius:12px;border:1px solid #222;background:#111;color:#fff;font-weight:600}
 .ndtabs button.on{background:#1d9bf0;border-color:#1d9bf0;color:#fff}
+.ndf-pos{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.ndf-pcard{display:flex;justify-content:space-between;gap:10px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:14px;padding:12px}
+.ndf-pcard .l{display:flex;flex-direction:column;gap:2px;min-width:0}.ndf-pcard .l b{font-size:15px}
+.ndf-pcard small{opacity:.55;font-size:11px}.ndf-pcard .r{text-align:right;display:flex;flex-direction:column;gap:2px}
+.ndf-pcard .r b{font-size:17px;font-variant-numeric:tabular-nums}
+.ndf-pcard .up,.ndf-pcard .r small.up{background:none;color:#22c55e;opacity:1}.ndf-pcard .dn,.ndf-pcard .r small.dn{background:none;color:#ef4444;opacity:1}

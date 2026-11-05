@@ -66,6 +66,14 @@ function buildLog(d){
   return rows;
 }
 
+function heldMin(iso){const m=Math.max(0,(Date.now()-new Date(iso).getTime())/60000);return m<60?Math.round(m)+' min':Math.floor(m/60)+'h'+String(Math.round(m%60)).padStart(2,'0')}
+function px(v){return v==null?'–':(+v).toPrecision(4)}
+function renderPos(d){
+  const b=$('ndPos');if(!b)return;const o=d.open||[];
+  if(!o.length){b.innerHTML='<div class="ndf-empty">Aucune position ouverte</div>';return}
+  b.innerHTML=o.map(p=>{const has=p.upnl_usd!=null;const cls=has?(+p.upnl_usd>=0?'up':'dn'):'';
+    return `<div class="ndf-pcard"><div class="l"><b>${E(p.symbol)}</b><small>ticket ${money(p.ticket_usd)} · ${heldMin(p.opened_at)}</small><small>entrée ${px(p.fill_price)} → ${has?px(p.last_price):'pas de prix'}${p.peak_pct!=null?' · pic '+pct(p.peak_pct):''}</small></div><div class="r"><b class="${cls}">${has?money(p.upnl_usd):'–'}</b><small class="${cls}">${has?pct(p.upnl_pct):''}</small></div></div>`}).join('');
+}
 async function nd(){
   if(sec.hidden) return;
   try{
@@ -73,6 +81,7 @@ async function nd(){
     if(!r.ok) throw r.status;
     const d=await r.json();
     const start=+d.start_stack, stack=+d.stack, pnl=stack-start;
+    const equity=(d.equity!=null)?+d.equity:stack, unr=+(d.unrealized_usd||0);
     const mult=start?stack/start:0;
     const nOpen=(d.open||[]).length;
     const pnlCls=pnl>0.005?'up':pnl<-0.005?'dn':'';
@@ -86,24 +95,29 @@ async function nd(){
           <div class="who"><b>Grok Bot</b><small>Night Desk · ${E(d.night_window||'')}</small></div>
           <div class="ndf-badges"><span class="pap">${E(d.mode||'PAPER')}</span><span class="lk">LIVE ${d.live_locked?'🔒':'ON'}</span></div>
         </div>
-        <div class="ndf-stack flat" id="ndStack" data-v="${stack}" data-start="${start}">${money(stack)}</div>
+        <div class="ndf-stack flat" id="ndStack" data-v="${equity}" data-start="${start}">${money(equity)}</div>
         <div class="ndf-sub" id="ndSub">à jour ${E(upd)}${d.test_daytime?' · test de jour':''}</div>
         <div class="ndf-stats">
           <div class="st"><i>Put in</i><b id="ndPut">${money(start)}</b></div>
           <div class="st"><i>On paper</i><b id="ndPaper">${money(stack)}</b></div>
           <div class="st"><i>PnL</i><b id="ndPnl" class="${pnlCls}">${money(pnl)} (${pct(start?pnl/start*100:0)})</b></div>
           <div class="st"><i>Multiple</i><b id="ndMult">${mult.toFixed(2)}x</b></div>
+          <div class="st"><i>Latent</i><b id="ndUnr">${money(unr)}</b></div>
           <div class="st"><i>Goal</i><b id="ndGoal">${d.goal_usd?money(stack)+' / '+money(+d.goal_usd):'—'}</b></div>
           <div class="st"><i>Open</i><b id="ndOpen">${nOpen}</b></div>
           <div class="st"><i>Trades</i><b id="ndTrades">${(d.counts&&d.counts.fills!=null)?d.counts.fills:((d.fills||[]).length)}</b></div>
         </div>
+        <div class="ndf-logh"><b>Positions</b><small>prix live Risk · hors frais</small></div>
+        <div class="ndf-pos" id="ndPos"></div>
         <div class="ndf-logh"><b>Copy log</b><small>Paris · newest first</small></div>
         <div class="ndf-log" id="ndLog"></div>
       </div>`;
     }
     const el=$('ndStack');
-    if(el){el.dataset.start=start; setStack(el, stack)}
-    if($('ndSub')) $('ndSub').textContent=`à jour ${upd}${d.test_daytime?' · test de jour':''}`;
+    if(el){el.dataset.start=start; setStack(el, equity)}
+    if($('ndSub')) $('ndSub').textContent=`equity (stack ${money(stack)} + latent ${money(unr)})${d.equity_partial?' partiel':''} · à jour ${upd}${d.test_daytime?' · test de jour':''}`;
+    if($('ndUnr')){$('ndUnr').textContent=money(unr);$('ndUnr').className=unr>0.005?'up':unr<-0.005?'dn':''}
+    renderPos(d);
     if($('ndPut')) $('ndPut').textContent=money(start);
     if($('ndPaper')) $('ndPaper').textContent=money(stack);
     if($('ndPnl')){$('ndPnl').textContent=`${money(pnl)} (${pct(start?pnl/start*100:0)})`;$('ndPnl').className=pnlCls}
