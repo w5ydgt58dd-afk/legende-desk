@@ -1,4 +1,4 @@
-/* build 11 */
+/* build 12 */
 const h=new URLSearchParams(location.hash.slice(1));if(h.get('d')){localStorage.dp=h.get('d')}
 const qs=new URLSearchParams(location.search);if(qs.get('d')){localStorage.dp=qs.get('d')}
 const B='d/'+(localStorage.dp||'')+'/';const $=id=>document.getElementById(id);const f=n=>(+n).toFixed(2);
