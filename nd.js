@@ -1,4 +1,4 @@
-/* build settings-mom-1 */
+/* build settings-mom-2 */
 (function(){
 const slot=document.querySelector('.ndtabs-slot')||document.querySelector('.hero');
 const tb=document.createElement('div');tb.className='ndtabs';
@@ -69,9 +69,10 @@ function buildLog(d){
 function heldMin(iso){const m=Math.max(0,(Date.now()-new Date(iso).getTime())/60000);return m<60?Math.round(m)+' min':Math.floor(m/60)+'h'+String(Math.round(m%60)).padStart(2,'0')}
 function px(v){return v==null?'–':(+v).toPrecision(4)}
 function renderSettings(d){
-  const b=$('ndSettings'); if(!b) return;
+  const b=document.getElementById('ndSettings'); if(!b) return;
   const s=d.settings||{};
   const active=!!s.momentum_gate_active;
+  const esc=typeof E==='function'?E:(x=>String(x??'').replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'));
   const rows=[
     ['Stop', s.STOP_PCT!=null?(s.STOP_PCT+' %'):'–'],
     ['Trailing', s.TRAIL_PCT!=null?(s.TRAIL_PCT+' %'):'–'],
@@ -81,7 +82,7 @@ function renderSettings(d){
     ['Momentum', s.MOMENTUM_TOP_PCT!=null?('top '+s.MOMENTUM_TOP_PCT+' %'+(s.MOMENTUM_WINDOW?' · '+s.MOMENTUM_WINDOW:'')):'–'],
     ['Gate mom.', active?'actif':'off'],
   ];
-  b.innerHTML=rows.map(([k,v])=>`<div class="st"><i>${k}</i><b class="${k==='Gate mom.'?(active?'up':''):''}">${E(v)}</b></div>`).join('');
+  b.innerHTML=rows.map(([k,v])=>`<div class="st"><i>${esc(k)}</i><b class="${k==='Gate mom.'?(active?'up':''):''}">${esc(v)}</b></div>`).join('');
 }
 function renderPos(d){
   const b=$('ndPos');if(!b)return;const o=d.open||[];
@@ -103,7 +104,7 @@ async function nd(){
     const log=buildLog(d);
     const upd=parisTime(d.updated_at);
 
-    if(!sec.querySelector('.ndf')){
+    if(!sec.querySelector('.ndf')||!document.getElementById('ndSettings')){
       sec.innerHTML=`<div class="ndf">
         <div class="ndf-top">
           <div class="mark">GB</div>
