@@ -1,3 +1,4 @@
+/* build 11 */
 (function(){const tb=document.createElement('div');tb.className='ndtabs';tb.innerHTML='<button type="button" id="t1" class="on">Legende</button><button type="button" id="t2">Night Desk</button>';
 document.querySelector('.hero').after(tb);const sec=document.createElement('section');sec.id='nd';sec.hidden=true;document.getElementById('coin').before(sec);
 const hero=document.querySelector('.hero'),home=document.getElementById('home');
