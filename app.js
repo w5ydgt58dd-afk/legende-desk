@@ -1,4 +1,4 @@
-/* build 13 */
+/* build 14 */
 const h=new URLSearchParams(location.hash.slice(1));if(h.get('d')){localStorage.dp=h.get('d')}
 const qs=new URLSearchParams(location.search);if(qs.get('d')){localStorage.dp=qs.get('d')}
 const B='d/'+(localStorage.dp||'')+'/';const $=id=>document.getElementById(id);const f=n=>(+n).toFixed(2);
@@ -10,8 +10,8 @@ function show(m){$('home').hidden=!!m;$('coin').hidden=!m;if(m)coin(m)}
 async function tick(){try{const s=await j('state.json'),c=await j('chart.json'),a=await j('activity.json');let t=null;try{t=await j('stats.json')}catch(e){}
 let nd=null;try{const r=await fetch('nightdesk.json?_='+Date.now(),{cache:'no-store'});if(r.ok)nd=await r.json()}catch(e){}
 $('mode').textContent=s.mode+(s.paused?' · ⏸ PAUSE':'');$('mode').className='paper'+(s.paused?' pz':'');const fresh=Date.now()/1000-s.ts<300;$('live').className='live'+(fresh?'':' off');$('live').textContent=fresh?'● Live':'● Hors ligne';
-const SN=s.sn_stack!=null;const cs=SN?s.sn_stack:s.stack,c0=SN?s.sn_start:s.start;$('bal').textContent='$'+f(cs);const d=cs-c0;$('mult').textContent=(cs/c0).toFixed(2)+'x';$('eqlbl').textContent=(SN?'Capital sniper · départ $'+c0+' · Exécutant $'+f(s.stack):'Equity · départ $'+s.start);
-$('pnl').innerHTML=`<span class="pill ${d>=0?'up':'dn'}">${d>=0?'+':''}$${f(d)} (${(d/s.start*100).toFixed(1)}%)</span> · ${s.closed.length} trades clos`;
+const ND=!!s.nd_style;const SN=!ND&&s.sn_stack!=null;const cs=ND?s.stack:(SN?s.sn_stack:s.stack),c0=ND?s.start:(SN?s.sn_start:s.start);$('bal').textContent='$'+f(cs);const d=cs-c0;$('mult').textContent=(cs/c0).toFixed(2)+'x';$('eqlbl').textContent=(SN?'Capital sniper · départ $'+c0+' · Exécutant $'+f(s.stack):'Equity · départ $'+s.start);
+$('pnl').innerHTML=`<span class="pill ${d>=0?'up':'dn'}">${d>=0?'+':''}$${f(d)} (${(d/c0*100).toFixed(1)}%)</span> · ${(ND?s.closed.filter(x=>x.source==='nd-style'):s.closed).length} trades clos`;
 line($('chart'),c.map(r=>[r.ts,r.value]));
 const J=s.journal||[],fp=x=>x==null?'–':(x>=0?'+':'')+(+x).toFixed(1)+'%';$('jsum').textContent=J.length?`${J.length} trades · ${J.filter(x=>(x.close_calls||[]).length).length} ⚠️ de justesse`:'';
 $('journal').innerHTML=J.map(x=>{const cc=x.close_calls||[],dt=new Date(x.opened_at*1000).toLocaleString('fr',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});return `<div class="row hs ${x.pnl_usd>0?'w':x.pnl_usd<0?'l':''}" onclick="show('${E(x.mint)}')"><b>${cc.length?'⚠️ ':''}${E(x.symbol||x.mint.slice(0,4))}</b> ${dt} · $${f(x.size_usd)} @ ${(+x.entry_price).toPrecision(4)} · ${x.closed_at?`${E(x.exit_reason)} · ${x.pnl_usd>=0?'+':''}$${f(x.pnl_usd)} (${fp(x.pnl_pct_on_initial)}) · ${Math.round(x.duration_min)} min`:'ouvert'}<small>score ${x.score??'–'} · alive ${x.alive_6h??'–'} · organic ${x.organic??'–'} · chase ${x.chase??'–'}${cc.length?' · ⚠️ '+cc.map(c=>E(c.name)+' '+c.value+(c.kind=='max'?' ≤ ':' ≥ ')+c.threshold).join(', '):''}<br>${E(x.entry_reason||'')}</small></div>`}).join('')||'<div class="row">Aucun trade journalisé</div>';
