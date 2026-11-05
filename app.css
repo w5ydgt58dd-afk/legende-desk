@@ -196,6 +196,13 @@ body.nd-on{background:#0b0d10}
   .ndt-head .badges{justify-content:flex-start}
 }
 /* Short Squeeze sq1 */
+/* Short Squeeze sq4 — gold Ethereum branding */
+.sq .ndt-head .logo.sq-logo{background:#0b0d10;border:1px solid #2a2410;padding:0;overflow:hidden}
+.sq .ndt-head .logo.sq-logo img{width:28px;height:28px;display:block;object-fit:contain}
+.sq-title-eth{width:22px;height:22px;vertical-align:middle;margin-right:4px;display:inline-block;object-fit:contain}
+.ndtabs button#t3{display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.sq-tab-eth{width:16px;height:16px;object-fit:contain;flex-shrink:0}
+
 .sq-band{overflow:hidden;white-space:nowrap;background:#0b0b0b;border-bottom:1px solid #222;padding:6px 0;font:12px ui-monospace,monospace}
 .sq-run{display:inline-block;animation:sqm 60s linear infinite}.sq-t{margin:0 14px}.sq-t i{font-style:normal}.sq-t em{opacity:.5;font-size:10px}
 @keyframes sqm{from{transform:translateX(0)}to{transform:translateX(-50%)}}

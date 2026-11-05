@@ -1,1 +1,6 @@
-{"name": "Legende Desk", "short_name": "Desk", "display": "standalone", "background_color": "#0b0d10", "theme_color": "#0b0d10", "start_url": "./index.html#d=M1Reth06HfEkmNlgOA7S5b6ynO68UMHpW6Pxg_tbqbE", "icons": [{"src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml"}]}
+{"name": "Legende Desk", "short_name": "Desk", "display": "standalone", "background_color": "#0b0d10", "theme_color": "#0b0d10", "start_url": "./index.html#d=M1Reth06HfEkmNlgOA7S5b6ynO68UMHpW6Pxg_tbqbE", "icons": [
+  {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+  {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+  {"src": "icons/icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any"},
+  {"src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+]}

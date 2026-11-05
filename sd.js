@@ -1,7 +1,7 @@
-/* Short Squeeze tab — build sq3 · live crypto 1s + TV charts */
+/* Short Squeeze tab — build sq4 · ETH gold branding · live crypto 1s + TV charts */
 (function(){
 const tb=document.querySelector('.ndtabs'); if(!tb) return;
-const b=document.createElement('button');b.type='button';b.id='t3';b.textContent='Short Squeeze';tb.appendChild(b);
+const b=document.createElement('button');b.type='button';b.id='t3';b.innerHTML='<img class="sq-tab-eth" src="icons/eth-diamond.svg?v=sq4" alt="" width="16" height="16"> Short Squeeze';tb.appendChild(b);
 const sec=document.createElement('section');sec.id='sd';sec.hidden=true;document.getElementById('coin').before(sec);
 const E=x=>String(x??'').replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
 const M=n=>n==null||n!==n?'—':(n<0?'-':'')+'$'+Math.abs(+n).toFixed(2);
@@ -96,7 +96,7 @@ async function load(){
  }).join('')||'<div class="ndt-empty">Aucune position</div>';
  sec.innerHTML=`<div class="ndt sq"><div class="sq-band"><div class="sq-run">${tick}${tick}</div></div>
  <div class="ndt-win"><div class="ndt-titlebar"><span class="dots"><i></i><i></i><i></i></span><span class="tt">Short Squeeze Terminal</span><span class="tr">short-only · actions · matières · crypto</span></div>
- <div class="ndt-head"><div class="logo">SQ</div><div class="who"><div class="title">Short Squeeze <span class="ver">sq3</span></div><div class="run"><span class="dot"></span> export il y a ${age(upd)}</div><div class="sub">short only · prix réels · papier · crypto live 1s</div></div>
+ <div class="ndt-head"><div class="logo sq-logo"><img src="icons/eth-diamond.svg?v=sq4" alt="ETH" width="28" height="28"></div><div class="who"><div class="title"><img class="sq-title-eth" src="icons/eth-diamond.svg?v=sq4" alt="" width="22" height="22"> Short Squeeze <span class="ver">sq4</span></div><div class="run"><span class="dot"></span> export il y a ${age(upd)}</div><div class="sub">short only · prix réels · papier · crypto live 1s</div></div>
  <div class="kpi"><div class="ndt-bal ${eq>=st?'up':'dn'}">${M(eq)}</div><div class="badges"><span class="pap">${E(d.mode)}</span><span class="lk">LIVE ${d.live_locked?'🔒':'ON'}</span></div><div class="cnt">départ ${M(st)} · latent ${M(d.unrealized_usd)} · <span class="up">${c.wins||0} W</span> / <span class="dn">${c.losses||0} L</span></div></div></div></div>
  <div class="card"><h3>Shorts ouverts <small>${(d.open||[]).length}</small></h3>${opens}</div>
  <div class="card"><h3>Shorts les plus intéressants <small>score faiblesse/momentum/volume</small></h3>${wl.map((w,i)=>`<div class="sq-row"><span>${i+1}</span><b>${E(nm(w.sym))}</b><span>${X(w.price)}</span><span class="${(w.chg_pct||0)>=0?'up':'dn'}">${P(w.chg_pct)}</span><span>score ${w.score??'—'}</span><small>${w.stale?'fermé/différé · ':''}${age(w.age_s)}${w.signal?' · <b class="dn">SIGNAL</b>':''}</small></div>`).join('')}</div>
