@@ -201,3 +201,6 @@ body.nd-on{background:#0b0d10}
 @keyframes sqm{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .sq-row{display:flex;gap:8px;align-items:center;font-size:13px;padding:5px 0;border-bottom:1px solid #222}.sq-row b{min-width:62px}.sq-row small{margin-left:auto;opacity:.7}
 .sq-row .up,.sq-t .up{color:#22c55e}.sq-row .dn,.sq-t .dn{color:#ef4444}
+
+.sq .up,.sq .dn,.sq .up *,.sq .dn *{background:none!important;box-shadow:none!important;border-color:transparent}
+.sq .up{color:#22c55e!important}.sq .dn{color:#ef4444!important}

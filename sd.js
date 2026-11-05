@@ -19,7 +19,7 @@ async function load(){
  const wl=d.watchlist||[],c=d.counts||{},eq=+d.equity,st=+d.start_stack;
  const upd=Math.round((Date.now()-new Date(d.updated_at).getTime())/1000);
  const tick=wl.slice().sort((a,b)=>(a.kind>b.kind?1:-1)).map(w=>`<span class="sq-t"><b>${E(nm(w.sym))}</b> ${X(w.price)} <i class="${(w.chg_pct||0)>=0?'up':'dn'}">${P(w.chg_pct)}</i>${w.stale?' <em>fermé/différé</em>':''}</span>`).join('');
- sec.innerHTML=`<div class="ndt"><div class="sq-band"><div class="sq-run">${tick}${tick}</div></div>
+ sec.innerHTML=`<div class="ndt sq"><div class="sq-band"><div class="sq-run">${tick}${tick}</div></div>
  <div class="ndt-win"><div class="ndt-titlebar"><span class="dots"><i></i><i></i><i></i></span><span class="tt">Short Squeeze Terminal</span><span class="tr">short-only · actions · matières · crypto</span></div>
  <div class="ndt-head"><div class="logo">SQ</div><div class="who"><div class="title">Short Squeeze <span class="ver">sq1</span></div><div class="run"><span class="dot"></span> export il y a ${age(upd)}</div><div class="sub">short only · prix réels · papier</div></div>
  <div class="kpi"><div class="ndt-bal ${eq>=st?'up':'dn'}">${M(eq)}</div><div class="badges"><span class="pap">${E(d.mode)}</span><span class="lk">LIVE ${d.live_locked?'🔒':'ON'}</span></div><div class="cnt">départ ${M(st)} · latent ${M(d.unrealized_usd)} · <span class="up">${c.wins||0} W</span> / <span class="dn">${c.losses||0} L</span></div></div></div></div>
