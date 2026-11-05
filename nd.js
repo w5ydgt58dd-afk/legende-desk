@@ -93,6 +93,7 @@ async function nd(){
           <div class="st"><i>On paper</i><b id="ndPaper">${money(stack)}</b></div>
           <div class="st"><i>PnL</i><b id="ndPnl" class="${pnlCls}">${money(pnl)} (${pct(start?pnl/start*100:0)})</b></div>
           <div class="st"><i>Multiple</i><b id="ndMult">${mult.toFixed(2)}x</b></div>
+          <div class="st"><i>Goal</i><b id="ndGoal">${d.goal_usd?money(stack)+' / '+money(+d.goal_usd):'—'}</b></div>
           <div class="st"><i>Open</i><b id="ndOpen">${nOpen}</b></div>
           <div class="st"><i>Trades</i><b id="ndTrades">${(d.counts&&d.counts.fills!=null)?d.counts.fills:((d.fills||[]).length)}</b></div>
         </div>
@@ -108,6 +109,7 @@ async function nd(){
     if($('ndPnl')){$('ndPnl').textContent=`${money(pnl)} (${pct(start?pnl/start*100:0)})`;$('ndPnl').className=pnlCls}
     if($('ndMult')) $('ndMult').textContent=mult.toFixed(2)+'x';
     if($('ndOpen')) $('ndOpen').textContent=String(nOpen);
+    if($('ndGoal')) $('ndGoal').textContent=d.goal_usd?money(stack)+' / '+money(+d.goal_usd):'—';
     if($('ndTrades')) $('ndTrades').textContent=String((d.counts&&d.counts.fills!=null)?d.counts.fills:(d.fills||[]).length);
     // badges stay in sync
     const pap=sec.querySelector('.ndf-badges .pap'); if(pap) pap.textContent=d.mode||'PAPER';
