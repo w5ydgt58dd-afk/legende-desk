@@ -1,0 +1,19 @@
+{
+  "ver": "sq3",
+  "titleOn": true,
+  "nOpen": 17,
+  "crypto": [
+    {
+      "sym": "BTCUSDT",
+      "kind": "crypto",
+      "last": "76198",
+      "upnl": "-$0.01"
+    },
+    {
+      "sym": "SOLUSDT",
+      "kind": "crypto",
+      "last": "89.52",
+      "upnl": "-$0.00"
+    }
+  ]
+}
