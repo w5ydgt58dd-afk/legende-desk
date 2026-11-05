@@ -17,3 +17,41 @@ button{background:#f97316;color:#fff;border:0;border-radius:10px;padding:6px 12p
 .paper.pz{background:#fbbf24;color:#3a1503}.hs.w{border-left:3px solid #16a34a;padding-left:6px}.hs.l{border-left:3px solid #dc2626;padding-left:6px}.hs small .pill{margin-right:2px}
 .ndtabs{display:flex;gap:8px;margin:10px 12px 0}.ndtabs button{flex:1;padding:8px;border-radius:12px;border:1px solid #3a2414;background:#24140b;color:#fff;font-weight:600}.ndtabs button.on{background:#e8590c}
 [hidden]{display:none!important}
+
+/* —— Night Desk FOMO / Grok Bot —— */
+body.nd-on{background:#000}
+.ndf{min-height:100vh;background:#000;padding:calc(env(safe-area-inset-top) + 12px) 16px 24px;color:#fff}
+.ndf-top{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.ndf-top .mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#1d9bf0,#6b4eff);display:grid;place-items:center;font-weight:800;font-size:14px}
+.ndf-top .who{flex:1;min-width:0}
+.ndf-top .who b{display:block;font-size:17px;letter-spacing:-.2px}
+.ndf-top .who small{opacity:.55;font-size:11px}
+.ndf-badges{display:flex;gap:6px;flex-shrink:0}
+.ndf-badges span{font-size:10px;font-weight:800;padding:4px 8px;border-radius:999px;letter-spacing:.3px}
+.ndf-badges .pap{background:#fff;color:#111}
+.ndf-badges .lk{background:#1a1a1a;border:1px solid #333;color:#fbbf24}
+.ndf-stack{font-size:64px;font-weight:800;letter-spacing:-2.5px;line-height:1;font-variant-numeric:tabular-nums;margin:8px 0 6px}
+.ndf-stack.up{color:#22c55e}.ndf-stack.dn{color:#ef4444}.ndf-stack.flat{color:#fff}
+.ndf-sub{opacity:.55;font-size:12px;margin-bottom:16px}
+.ndf-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.ndf-stats .st{background:#111;border:1px solid #1f1f1f;border-radius:14px;padding:12px}
+.ndf-stats .st i{display:block;font-style:normal;opacity:.5;font-size:11px;margin-bottom:4px}
+.ndf-stats .st b{font-size:18px;font-variant-numeric:tabular-nums}
+.ndf-stats .st b.up{color:#22c55e}.ndf-stats .st b.dn{color:#ef4444}
+.ndf-logh{display:flex;justify-content:space-between;align-items:baseline;margin:8px 0 10px}
+.ndf-logh b{font-size:15px}.ndf-logh small{opacity:.45;font-size:11px}
+.ndf-log{display:flex;flex-direction:column;gap:8px;max-height:55vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.ndf-row{display:flex;gap:10px;align-items:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:14px;padding:12px}
+.ndf-row .side{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:11px;font-weight:800;flex-shrink:0}
+.ndf-row .side.buy{background:#052e16;color:#22c55e}.ndf-row .side.sell{background:#3f0a0a;color:#ef4444}
+.ndf-row .mid{flex:1;min-width:0}
+.ndf-row .mid b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ndf-row .mid small{opacity:.5;font-size:11px}
+.ndf-row .right{text-align:right;flex-shrink:0}
+.ndf-row .right b{display:block;font-size:14px;font-variant-numeric:tabular-nums}
+.ndf-row .right b.up{color:#22c55e}.ndf-row .right b.dn{color:#ef4444}
+.ndf-row .right small{opacity:.45;font-size:10px}
+.ndf-empty{opacity:.4;text-align:center;padding:28px 10px;font-size:13px}
+.ndtabs{display:flex;gap:8px;margin:10px 12px 0;position:sticky;top:0;z-index:5;background:#000;padding-bottom:4px}
+.ndtabs button{flex:1;padding:8px;border-radius:12px;border:1px solid #222;background:#111;color:#fff;font-weight:600}
+.ndtabs button.on{background:#1d9bf0;border-color:#1d9bf0;color:#fff}
