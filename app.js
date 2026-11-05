@@ -23,7 +23,7 @@ const leg=s.open.length?s.open.map(p=>{
   const pct=(p.upnl_pct!=null?+p.upnl_pct:(entry&&cur!=null?((cur/entry-1)*100):null));
   const cls=pct==null?'':(pct>=0?'up':'dn');
   const src=p.source==='nd-style'?' · ND-style':'';
-  return `<div class="row poscard ${cls}" onclick="show('${E(p.mint)}')"><div class="poshead"><b>${E(p.symbol||p.mint.slice(0,4))}</b> <span class="pill ${cls}">${pct==null?'–':((pct>=0?'+':'')+(+pct).toFixed(1)+'%')}</span> <span class="pill ${cls}">${money(upnl,true)}</span></div><small>mise $${f(p.size_usd||0)} · entrée ${entry?entry.toPrecision(4):'–'} · actuel ${cur!=null?cur.toPrecision(4):'–'}${p.stop_price?(' · stop '+(+p.stop_price).toPrecision(4)):'|'}${p.trail_active?' · trail':''}${src}</small></div>`;
+  return `<div class="row poscard ${cls}" onclick="show('${E(p.mint)}')"><div class="poshead"><b>${E(p.symbol||p.mint.slice(0,4))}</b> <span class="pill ${cls}">${pct==null?'–':((pct>=0?'+':'')+(+pct).toFixed(1)+'%')}</span> <span class="pill ${cls}">${money(upnl,true)}</span></div><small>mise $${f(p.size_usd||0)} · entrée ${entry?entry.toPrecision(4):'–'} · actuel ${cur!=null?cur.toPrecision(4):'–'}${p.stop_price?(' · stop '+(+p.stop_price).toPrecision(4)):''}${p.trail_active?' · trail':''}${src}</small></div>`;
 }).join(''):'';
 const ndRows=(nd&&nd.open&&nd.open.length)?nd.open.map(o=>{
   const entry=+o.fill_price||0, cur=(o.last_price!=null?+o.last_price:null);
