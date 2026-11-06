@@ -107,5 +107,7 @@ async function load(){
  startLive();
 }
 setInterval(load,15000);
-const h=new URLSearchParams(location.hash.slice(1));if(h.get('tab')==='sq')on(true);
+const bootParams=new URLSearchParams(location.hash.slice(1));
+const queryParams=new URLSearchParams(location.search);
+if(bootParams.get('tab')==='sq'||queryParams.get('tab')==='sq') on(true);
 })();
