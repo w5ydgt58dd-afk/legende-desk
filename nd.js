@@ -315,6 +315,9 @@ setInterval(nd,5000);
 
 const boot=new URLSearchParams(location.hash.slice(1));
 const bootq=new URLSearchParams(location.search);
+const wantSq=boot.get('tab')==='sq'||bootq.get('tab')==='sq';
+// Keep a direct Short Squeeze link intact; its own script initializes that view.
+if(wantSq) return;
 const wantLeg=boot.get('tab')==='legende'||bootq.get('tab')==='legende';
 if(wantLeg) sw(false); else sw(true);
 })();
