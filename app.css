@@ -196,7 +196,7 @@ body.nd-on{background:#0b0d10}
   .ndt-head .badges{justify-content:flex-start}
 }
 /* Short Squeeze sq1 */
-/* Short Squeeze sq4 — gold Ethereum branding */
+/* Short Squeeze sq5 — slower shared price ticker */
 .sq .ndt-head .logo.sq-logo{background:#0b0d10;border:1px solid #2a2410;padding:0;overflow:hidden}
 .sq .ndt-head .logo.sq-logo img{width:28px;height:28px;display:block;object-fit:contain}
 .sq-title-eth{width:22px;height:22px;vertical-align:middle;margin-right:4px;display:inline-block;object-fit:contain}
@@ -204,7 +204,7 @@ body.nd-on{background:#0b0d10}
 .sq-tab-eth{width:16px;height:16px;object-fit:contain;flex-shrink:0}
 
 .sq-band{overflow:hidden;white-space:nowrap;background:#0b0b0b;border-bottom:1px solid #222;padding:6px 0;font:12px ui-monospace,monospace}
-.sq-run{display:inline-block;animation:sqm 60s linear infinite}.sq-t{margin:0 14px}.sq-t i{font-style:normal}.sq-t em{opacity:.5;font-size:10px}
+.sq-run{display:inline-block;animation:sqm 75s linear infinite}.sq-t{margin:0 14px}.sq-t i{font-style:normal}.sq-t em{opacity:.5;font-size:10px}
 @keyframes sqm{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .sq-row{display:flex;gap:8px;align-items:center;font-size:13px;padding:5px 0;border-bottom:1px solid #222}.sq-row b{min-width:62px}.sq-row small{margin-left:auto;opacity:.7}
 .sq-row .up,.sq-t .up{color:#22c55e}.sq-row .dn,.sq-t .dn{color:#ef4444}
