@@ -1,0 +1,94 @@
+Short Squeeze — consultation actualisée 2026-11-06T15:49:03+01:00
+Europe/Paris — 2026-11-06 15:49:03 CET
+PAPER — LIVE_LOCKED=True — 49 ouverts — latent -18.82 $, non encaissé (formule risk.py close mark-to-market)
+Snapshot DB lecture seule: 49 open / 4 closes (sum pnl_usd=-0.810895)
+
+=== BUDGET (méthodes executor + state.json local) ===
+settings START_STACK=1000 POSITION_PCT=15 POSITION_MAX_USD=150 MAX_OPEN=100 FEE_PCT=0.1 SLIPPAGE_PCT=0.05
+stack_calc (START+sum closes) = 999.189105
+used (sum tickets open) = 989.357570
+budget libre (stack_calc-used) = 9.831535
+prochain ticket possible = 1.474730
+slots théoriques restants MAX_OPEN-n = 51
+state.json @ 2026-11-06T15:48:59+0100: start_stack=1000 stack=999.1891050421298 equity=981.3983735654249 unrealized_usd=-17.790731476704906 counts.open=49
+NOTE: state.unrealized_usd = publish.py sans frais/slippage sortie; latent ci-dessous = risk.py complet.
+
+=== POSITIONS (symbole | fill exécution | prix frais | latent $ | latent % | fraîcheur) ===
+SPY | fill 735.962 | prix 740.64 | latent -0.1330 $ | -0.89 % | prix âgé de 1 s
+QQQ | fill 651.443 | prix 662.96 | latent -0.2576 $ | -2.02 % | prix âgé de 1 s
+IWM | fill 271.494 | prix 272.34 | latent -0.0609 $ | -0.56 % | prix âgé de 2 s
+NVDA | fill 182.279 | prix 194.28 | latent -0.6305 $ | -6.84 % | prix âgé de 1 s
+TSLA | fill 340.844 | prix 354.59 | latent -0.3358 $ | -4.29 % | prix âgé de 8 s
+META | fill 602.309 | prix 618.14 | latent -0.1918 $ | -2.88 % | prix âgé de 0 s
+HG=F | fill 6.26287 | prix 6.264 | latent -0.0129 $ | -0.27 % | prix âgé de 602 s
+BTCUSDT | fill 76156 | prix 75930 | latent +0.0019 $ | +0.05 % | prix âgé de 0 s
+SOLUSDT | fill 89.5752 | prix 91.28 | latent -0.0749 $ | -2.16 % | prix âgé de 0 s
+GOOGL | fill 282.778 | prix 287.905 | latent -0.0610 $ | -2.07 % | prix âgé de 2 s
+AVGO | fill 297.161 | prix 305.31 | latent -0.0752 $ | -3.00 % | prix âgé de 2 s
+COIN | fill 135.572 | prix 137.755 | latent -0.0397 $ | -1.86 % | prix âgé de 1 s
+MSTR | fill 128.081 | prix 129.578 | latent -0.0258 $ | -1.42 % | prix âgé de 1 s
+PLTR | fill 155.321 | prix 163.13 | latent -0.0815 $ | -5.29 % | prix âgé de 0 s
+SMCI | fill 26.6667 | prix 29.2 | latent -0.1279 $ | -9.76 % | prix âgé de 1 s
+TRUMPUSDT | fill 1.18841 | prix 1.269 | latent -0.0704 $ | -7.04 % | prix âgé de 0 s
+INTC | fill 54.1609 | prix 56.525 | latent -6.2759 $ | -4.62 % | prix âgé de 5 s
+ARM | fill 169.89 | prix 176.822 | latent -5.0054 $ | -4.34 % | prix âgé de 1 s
+SHOP | fill 144.718 | prix 146.39 | latent -1.3809 $ | -1.41 % | prix âgé de 1 s
+CRM | fill 220.889 | prix 216.6 | latent +1.4134 $ | +1.69 % | prix âgé de 12 s
+ORCL | fill 115.082 | prix 118.79 | latent -2.4644 $ | -3.48 % | prix âgé de 2 s
+ADBE | fill 245.492 | prix 239.36 | latent +1.3567 $ | +2.25 % | prix âgé de 6 s
+BA | fill 170.665 | prix 172.515 | latent -0.6842 $ | -1.34 % | prix âgé de 4 s
+GS | fill 871.704 | prix 883.71 | latent -0.7093 $ | -1.63 % | prix âgé de 4 s
+BAC | fill 50.045 | prix 50.02 | latent -0.0740 $ | -0.20 % | prix âgé de 1 s
+XOM | fill 168.426 | prix 166.485 | latent +0.2843 $ | +0.90 % | prix âgé de 3 s
+CVX | fill 216.027 | prix 213.87 | latent +0.2005 $ | +0.75 % | prix âgé de 8 s
+SNOW | fill 272.567 | prix 276.96 | latent -0.4237 $ | -1.86 % | prix âgé de 2 s
+HOOD | fill 77.5282 | prix 81.075 | latent -0.9333 $ | -4.83 % | prix âgé de 1 s
+MARA | fill 5.992 | prix 6.03 | latent -0.1453 $ | -0.89 % | prix âgé de 1 s
+AFRM | fill 69.0055 | prix 71 | latent -0.4389 $ | -3.14 % | prix âgé de 1 s
+UPST | fill 21.4443 | prix 22.4 | latent -0.5591 $ | -4.71 % | prix âgé de 8 s
+XBI | fill 149.535 | prix 148.55 | latent +0.0413 $ | +0.41 % | prix âgé de 1 s
+XLE | fill 62.6986 | prix 62.26 | latent +0.0386 $ | +0.45 % | prix âgé de 10 s
+ARKK | fill 72.9335 | prix 75.26 | latent -0.2509 $ | -3.44 % | prix âgé de 3 s
+SMH | fill 457.678 | prix 475.115 | latent -0.2518 $ | -4.07 % | prix âgé de 0 s
+UNH | fill 397.391 | prix 395.5 | latent +0.0119 $ | +0.23 % | prix âgé de 2 s
+CSCO | fill 96.5717 | prix 96.92 | latent -0.0273 $ | -0.61 % | prix âgé de 2 s
+QCOM | fill 157.851 | prix 162.96 | latent -0.1328 $ | -3.49 % | prix âgé de 0 s
+TXN | fill 289.955 | prix 280.31 | latent +0.0996 $ | +3.08 % | prix âgé de 2 s
+AMAT | fill 329.715 | prix 347.338 | latent -0.1539 $ | -5.60 % | prix âgé de 1 s
+PANW | fill 319.23 | prix 327.49 | latent -0.0479 $ | -2.84 % | prix âgé de 5 s
+CRWD | fill 220.865 | prix 227.285 | latent -0.0453 $ | -3.16 % | prix âgé de 1 s
+NOW | fill 102.269 | prix 102.42 | latent -0.0049 $ | -0.40 % | prix âgé de 1 s
+C | fill 118.171 | prix 119.915 | latent -0.0179 $ | -1.73 % | prix âgé de 10 s
+LCID | fill 3.03148 | prix 3.035 | latent -0.0073 $ | -0.37 % | prix âgé de 7 s
+SLV | fill 46.3968 | prix 46.87 | latent -0.0214 $ | -1.27 % | prix âgé de 4 s
+PFE | fill 28.9355 | prix 29.11 | latent -0.0122 $ | -0.85 % | prix âgé de 1 s
+CAT | fill 560.34 | prix 568.695 | latent -0.0212 $ | -1.74 % | prix âgé de 3 s
+
+TOTAL latent: -18.8202 $  |  gagnants: 9 (+3.4483 $)  |  perdants: 40 (-22.2685 $)
+Top gagnants: CRM +1.4134, ADBE +1.3567, XOM +0.2843, CVX +0.2005, TXN +0.0996, XBI +0.0413, XLE +0.0386, UNH +0.0119
+Top perdants: INTC -6.2759, ARM -5.0054, ORCL -2.4644, SHOP -1.3809, HOOD -0.9333, GS -0.7093, BA -0.6842, NVDA -0.6305
+
+=== SIGNAUX FRAIS (watch.json executor, âge 21s) ===
+Nouveaux signaux True (non déjà short): 0
+Signaux True mais déjà short (held): 11
+  HELD NOW score=38.61 | last 102.2 ema20 105.8 ema50 114.8 d-ema20 126.5 mom6h -1.69% liq $175.8M/1h
+  HELD TXN score=28.88 | last 280.5 ema20 295.1 ema50 300.7 d-ema20 292.5 mom6h -4.00% liq $294.8M/1h
+  HELD PFE score=23.2 | last 29.08 ema20 30.18 ema50 30.2 d-ema20 29.64 mom6h -4.50% liq $370.5M/1h
+  HELD CRM score=22.91 | last 216.6 ema20 223.2 ema50 228.2 d-ema20 232.6 mom6h -2.70% liq $124.5M/1h
+  HELD ADBE score=19.34 | last 239 ema20 246.2 ema50 248.6 d-ema20 248.4 mom6h -2.74% liq $105.9M/1h
+  HELD XLE score=17.77 | last 62.25 ema20 63.85 ema50 65.85 d-ema20 66.02 mom6h -1.51% liq $355.2M/1h
+  HELD XOM score=17.25 | last 166.6 ema20 170.9 ema50 175.8 d-ema20 174.7 mom6h -1.88% liq $165.2M/1h
+  HELD CVX score=14.91 | last 213.9 ema20 218.6 ema50 223.6 d-ema20 221.7 mom6h -1.85% liq $158.9M/1h
+  HELD XBI score=12.17 | last 148.6 ema20 152.2 ema50 153.3 d-ema20 152.8 mom6h -0.60% liq $205.6M/1h
+  HELD UNH score=9.51 | last 396.2 ema20 401.9 ema50 404.3 d-ema20 401.2 mom6h -1.43% liq $262.0M/1h
+  HELD BAC score=7.77 | last 49.93 ema20 50.34 ema50 50.44 d-ema20 51.26 mom6h -0.82% liq $181.2M/1h
+
+=== APARTÉ divergences / illiquides (budget inchangé) ===
+Illiquides (watch): 2
+  ILLIQ TRUMPUSDT | illiquid: last 1.271 ema20 1.223 ema50 1.265 d-ema20 1.584 mom6h +3.84% liq $0.4M/1h
+  ILLIQ LCID | illiquid: last 3.035 ema20 3.114 ema50 3.181 d-ema20 3.312 mom6h +0.33% liq $2.6M/1h
+
+=== ERREURS LECTURE ===
+  aucune
+
+Consultation seule — aucune position ouverte/fermée/modifiée — aucun réglage — desks non redémarrés.
