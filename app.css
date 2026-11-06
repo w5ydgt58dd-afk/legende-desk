@@ -195,7 +195,8 @@ body.nd-on{background:#0b0d10}
   .ndt-head .kpi{width:100%;text-align:left;margin-left:0}
   .ndt-head .badges{justify-content:flex-start}
 }
-/* Short Squeeze sq1 */
+/* Short Squeeze
+.sq{overflow-x:clip} sq1 */
 /* Short Squeeze sq5 — slower shared price ticker */
 .sq .ndt-head .logo.sq-logo{background:#0b0d10;border:1px solid #2a2410;padding:0;overflow:hidden}
 .sq .ndt-head .logo.sq-logo img{width:28px;height:28px;display:block;object-fit:contain}
