@@ -35,6 +35,7 @@ html,body{margin:0;background:#000;color:#fff;font:15px -apple-system,system-ui,
 <section id="nd"></section>
 <section id="coin" class="card" hidden><button onclick="show()">← Retour</button><h2 id="ctitle"></h2><canvas id="cchart" height="160"></canvas><div id="cbody"></div></section>
 <script>
+window.__bootHash=location.hash; /* lq1: keep initial tab for Long Squeeze */
 (function(){
   /* Durable cache bust: every open loads fresh CSS/JS; also kill any old SW */
   if(navigator.serviceWorker){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){r.unregister()})})}
@@ -43,7 +44,7 @@ html,body{margin:0;background:#000;color:#fff;font:15px -apple-system,system-ui,
   function css(h){var l=document.createElement('link');l.rel='stylesheet';l.href=h+'?_='+v;document.head.appendChild(l)}
   function js(h){return new Promise(function(res,rej){var s=document.createElement('script');s.src=h+'?_='+v;s.onload=res;s.onerror=rej;document.body.appendChild(s)})}
   css('app.css?v=sq5');
-  js('chart.js').then(function(){return js('app.js?v=terminal-v1')}).then(function(){return js('nd.js?v=sq7')}).then(function(){return js('sd.js?v=sq7')}).then(function(){
+  js('chart.js').then(function(){return js('app.js?v=terminal-v1')}).then(function(){return js('nd.js?v=sq7')}).then(function(){return js('sd.js?v=sq7')}).then(function(){return js('ld.js?v=lq1')}).then(function(){
     var b=document.getElementById('boot'); if(b) b.remove();
   }).catch(function(e){var b=document.getElementById('boot'); if(b) b.textContent='Erreur de chargement — tirez pour rafraîchir'; console.error(e)});
 })();

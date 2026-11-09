@@ -212,3 +212,6 @@ body.nd-on{background:#0b0d10}
 
 .sq .up,.sq .dn,.sq .up *,.sq .dn *{background:none!important;box-shadow:none!important;border-color:transparent}
 .sq .up{color:#22c55e!important}.sq .dn{color:#ef4444!important}
+
+/* lq1 Long Squeeze tab */
+.ndtabs button#t4{display:inline-flex;align-items:center;justify-content:center;gap:6px}
