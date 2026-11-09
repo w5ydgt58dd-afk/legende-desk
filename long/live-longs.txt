@@ -1,17 +1,18 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-09T18:57:41+01:00 Europe/Paris
+Actualisé : 2026-11-09T19:02:06+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-1 longs ouverts | latent total -0.0913 $ | 0 gagnants / 1 perdants (latent non encaissé, avec frais de sortie estimés)
-Stack PAPER 1000.0000 $ | tickets engagés 20.0000 $ | budget libre 980.0000 $ | ticket suivant 20.0000 $
+2 longs ouverts | latent total -0.1578 $ | 0 gagnants / 2 perdants (latent non encaissé, avec frais de sortie estimés)
+Stack PAPER 1000.0000 $ | tickets engagés 40.0000 $ | budget libre 960.0000 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 0 L | PnL réalisé +0.00 $
-99 places libres sur 100. Nouveaux signaux frais : 0.
+98 places libres sur 100. Nouveaux signaux frais : 1.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-NG=F | 3.1845915 | 3.178 | -0.09132 $ | -0.46 % | 680 s au moteur
+NG=F | 3.1845915 | 3.175 | -0.11014 $ | -0.55 % | 606 s au moteur
+MCD | 282.891375 | 282.924 | -0.04769 $ | -0.24 % | 7 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-09T18:56:20+0100
+Dernier export du moteur utilisé : 2026-11-09T19:01:46+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
