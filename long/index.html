@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Long Squeeze · Relevé continu</title>
+<style>
+:root{color-scheme:dark}body{font:16px/1.5 system-ui,sans-serif;background:#091217;color:#e7f0ed;margin:0 auto;max-width:760px;padding:22px 16px}h1{font-size:26px;margin:6px 0}.muted,small{color:#90a5ab}.info{background:#12232a;padding:14px;border-radius:12px}.tax{display:inline-block;background:#18382c;padding:4px 8px;border-radius:9px;color:#8ce1b5;font-size:12px}#totals{background:#0e1e26;padding:14px;border-radius:12px;margin:16px 0}.position{padding:12px 0;border-bottom:1px solid #26373d;display:flex;justify-content:space-between;gap:12px}.loss{color:#ff8b84}.gain{color:#8ce1b5}a{color:#68e0cc;text-decoration:none}.source{font-size:13px;margin:16px 0}.box{display:block;background:#1a363b;border-radius:12px;padding:12px;text-align:center;margin:20px 0}.num{text-align:right;white-space:nowrap}table{width:100%;border-collapse:collapse}.fresh{font-size:12px;color:#81b9bc}@media(min-width:480px){.desc{min-width:65%}}button{background:#123039;color:white;border:1px solid #376c75;border-radius:8px;padding:8px 12px;font-size:14px}
+</style></head><body>
+<h1>Long Squeeze — relevé continu</h1><span class="tax">PAPER · LIVE verrouillé</span>
+<p id="cue" class="muted">Chargement des positions…</p>
+<div id="totals"></div>
+<p class="info"><b>Légende.</b> Desk inverse de Short Squeeze : positions <b>longues</b> (achat d’actions haussières). Entrée seulement si les <b>trois critères</b> sont réunis en même temps : <b>cassure</b> (dernier prix au-dessus du plus haut des 20 dernières bougies 1 h, EMA20 &gt; EMA50), <b>volume qui explose</b> (≥ 2× la moyenne des 20 bougies précédentes, liquidité minimale) et <b>momentum</b> (+0,3 % sur 6 h, au-dessus de l’EMA20 journalière). Sortie : stop dur sous l’entrée, stop suiveur sous le plus haut atteint. Vert = le prix monte (gain pour un long), rouge = il baisse.</p>
+<a class="box" href="live-longs.txt">Ouvrir le rapport TXT reconstruit chaque minute</a>
+<p class="info source">Cryptos : nouvelles demandes de prix toutes les secondes via Binance quand le réseau répond. Actions et matières : derniers prix reçus par le moteur, rechargés ici toutes les deux secondes. Les données publiques peuvent être mises en cache; leur horodatage et l'âge du prix source sont affichés.<br>Les latents sont <b>non encaissés</b>, avec frais de clôture simulés selon le réglage existant. Aucune lecture ne déclenche d'ordre.</p>
+<section id="positions"></section>
+<p class="info" id="signals"></p>
+<script>
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
+let lastData=null, crypt={}, fetched=false, removed={};
+const price=v=>typeof v!=='number'?'—':Number(v).toLocaleString('fr-FR',{maximumSignificantDigits:9});
+const money=v=>(v<0?'− ':'+ ')+Math.abs(v).toFixed(4)+' $';
+function paint(){
+ if(!lastData)return; let d=lastData, fee=d.settings.FEE_PCT/100, slip=d.settings.SLIPPAGE_PCT/100, totals=0, win=0, losses=0, used=0;
+ for(const p of d.open){
+  let x=crypt[p.symbol]||p.last_price; if(!(x>0))continue;
+  let qty=p.ticket_usd/p.fill_price,exit=x*(1-slip),u=(exit-p.fill_price)*qty-p.ticket_usd*fee-qty*exit*fee;
+  p._net=u;p._last=x; totals+=u;win+=u>0;losses+=u<=0;used+=p.ticket_usd;
+ }
+ let free=Math.max(0,d.stack-used),next=d.settings.POSITION_FIXED_USD?Math.min(d.settings.POSITION_FIXED_USD,free):Math.min(free*d.settings.POSITION_PCT/100,d.settings.POSITION_MAX_USD);
+ let up=totals>=0;document.querySelector('#totals').innerHTML='<strong>'+d.open.length+' longs · <span class="'+(up?'gain':'loss')+'">'+money(totals)+'</span> latent net</strong><br><small>'+win+' gagnants / '+losses+' perdants · budget libre '+free.toFixed(4)+' $ · ticket suivant '+next.toFixed(4)+' $</small><br><small>Clôturés (revendus par leur règle de sortie) : '+d.counts.wins+' W / '+d.counts.losses+' L · réalisé '+money(d.stack-d.start_stack)+'</small>';
+ document.querySelector('#positions').innerHTML='<h2>Positions longues</h2>'+(d.open.length?'':'<p class="muted">Aucune position longue ouverte : aucune action ne remplit les trois critères ensemble pour l’instant.</p>')+d.open.slice().sort((a,b)=>a._net-b._net).map(p=>'<div class="position"><div class="desc"><strong>'+esc(p.symbol)+'</strong><br><small>Entrée '+price(p.fill_price)+' → <b>'+price(p._last)+'</b></small><br><small class="fresh">'+((p.kind==='crypto'&&crypt[p.symbol])?'Prix Binance à la demande':'Prix moteur âgé de '+Math.round(p.price_age_s)+' s')+'</small></div><div class="num '+(p._net>=0?'gain':'loss')+'">'+money(p._net)+'<br><small>'+(p._net>=0?'+':'')+(100*p._net/p.ticket_usd).toFixed(2)+' %</small></div></div>').join('');
+ let fresh=(d.events||[]).filter(e=>e.src==='scan'&&e.tag==='NEW'&&Date.now()/1000-e.ts<=d.settings.SIGNAL_MAX_AGE_S);let wl=(d.watchlist||[]).filter(w=>w.crit).slice(0,8);document.querySelector('#signals').innerHTML='Nouveaux signaux frais selon le dernier export : '+fresh.length+'. Aucune action manuelle n’est proposée.'+(wl.length?'<br><small>Plus proches du signal (C = cassure, V = volume, M = momentum) : '+wl.map(w=>esc(w.sym)+' '+(w.crit.breakout?'C':'·')+(w.crit.volume?'V':'·')+(w.crit.momentum?'M':'·')).join(' · ')+'</small>':'');
+}
+async function load(){
+ if(document.hidden)return;
+ try{
+  let r=await fetch('../longdesk.json?_='+Date.now(),{cache:'no-store'}); if(!r.ok)throw Error('HTTP '+r.status);
+  lastData=await r.json();fetched=true;document.querySelector('#cue').textContent='Export moteur du '+new Date(lastData.updated_at).toLocaleString('fr-FR',{timeZone:'Europe/Paris'})+' · consultation actualisée';paint();
+ }catch(e){if(fetched)document.querySelector('#cue').textContent+=' · reprise automatique à la prochaine réponse';}
+}
+async function prices(){
+ if(!lastData||document.hidden)return;let sy=[...new Set(lastData.open.filter(p=>p.kind==='crypto').map(p=>p.symbol))];if(!sy.length)return;
+ try{let r=await fetch('https://api.binance.com/api/v3/ticker/price?symbols='+encodeURIComponent(JSON.stringify(sy)),{cache:'no-store'});if(!r.ok)throw Error('Error '+r.status);for(const p of await r.json())crypt[p.symbol]=+p.price;paint()}catch(e){}
+}
+load();setInterval(load,2000);setInterval(prices,1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)load()});
+</script></body></html>
