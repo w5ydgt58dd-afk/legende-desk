@@ -1,21 +1,21 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-10T17:25:23+01:00 Europe/Paris
+Actualisé : 2026-11-10T17:26:23+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-5 longs ouverts | latent total -2.2366 $ | 1 gagnants / 4 perdants (latent non encaissé, avec frais de sortie estimés)
+5 longs ouverts | latent total -2.2017 $ | 1 gagnants / 4 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 1000.0000 $ | tickets engagés 100.0000 $ | budget libre 900.0000 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 0 L | PnL réalisé +0.00 $
 95 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-LCID | 4.12206 | 3.91 | -1.07735 $ | -5.39 % | 430 s au moteur
-UBER | 71.245605 | 69.4 | -0.56731 $ | -2.84 % | 419 s au moteur
-GC=F | 4151.37465 | 4048.6 | -0.54438 $ | -2.72 % | 1091 s au moteur
-MCD | 282.891375 | 281.11 | -0.17574 $ | -0.88 % | 418 s au moteur
-NG=F | 3.1845915 | 3.213 | +0.12815 $ | +0.64 % | 1093 s au moteur
+LCID | 4.12206 | 3.885 | -1.19847 $ | -5.99 % | 31 s au moteur
+GC=F | 4151.37465 | 4045.8 | -0.55785 $ | -2.79 % | 631 s au moteur
+UBER | 71.245605 | 69.45 | -0.55329 $ | -2.77 % | 30 s au moteur
+MCD | 282.891375 | 281.27 | -0.16445 $ | -0.82 % | 30 s au moteur
+NG=F | 3.1845915 | 3.236 | +0.27238 $ | +1.36 % | 633 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-10T17:18:27+0100
+Dernier export du moteur utilisé : 2026-11-10T17:26:03+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
