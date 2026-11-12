@@ -1,70 +1,71 @@
 SHORT SQUEEZE — RELEVÉ CONTINU
-Actualisé : 2026-11-12T16:29:55+01:00 Europe/Paris
+Actualisé : 2026-11-12T16:34:39+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-55 shorts ouverts | latent total -14.6682 $ | 16 gagnants / 39 perdants (latent non encaissé, avec frais de sortie estimés)
-Stack PAPER 973.8096 $ | tickets engagés 910.4584 $ | budget libre 63.3512 $ | ticket suivant 9.5027 $
-Clôturés (rachetés par leur règle de sortie) : 35 W / 25 L | PnL réalisé -26.19 $
+55 shorts ouverts | latent total -16.8229 $ | 15 gagnants / 40 perdants (latent non encaissé, avec frais de sortie estimés)
+Stack PAPER 974.1367 $ | tickets engagés 909.8226 $ | budget libre 64.3140 $ | ticket suivant 9.6471 $
+Clôturés (rachetés par leur règle de sortie) : 36 W / 25 L | PnL réalisé -25.86 $
 45 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GS | 871.70393 | 916.875 | -2.36810 $ | -5.44 % | 540 s au moteur
-SHOP | 144.717605 | 147.295 | -1.99533 $ | -2.03 % | 524 s au moteur
-CL=F | 84.027965 | 86.97 | -1.20831 $ | -3.76 % | 1121 s au moteur
-BZ=F | 91.07444 | 93.99 | -1.12139 $ | -3.46 % | 1121 s au moteur
-XOM | 163.248335 | 168.29 | -1.00647 $ | -3.34 % | 521 s au moteur
-BA | 170.664625 | 173.135 | -0.87053 $ | -1.70 % | 522 s au moteur
-CVX | 208.945475 | 214.98 | -0.80418 $ | -3.14 % | 522 s au moteur
-XLE | 60.519725 | 63.93 | -0.76352 $ | -5.89 % | 520 s au moteur
-DKNG | 18.500745 | 18.76 | -0.73493 $ | -1.65 % | 523 s au moteur
-QQQ | 651.4431155 | 685.18 | -0.69317 $ | -5.44 % | 526 s au moteur
-SPY | 735.961835 | 756.29 | -0.45245 $ | -3.02 % | 504 s au moteur
-NVDA | 159.490215 | 163.455 | -0.41405 $ | -2.74 % | 497 s au moteur
-BAC | 50.044965 | 50.39 | -0.34803 $ | -0.94 % | 521 s au moteur
-IWM | 271.494185 | 278.88 | -0.32237 $ | -2.97 % | 522 s au moteur
-ARKK | 72.933515 | 75.93 | -0.31797 $ | -4.36 % | 550 s au moteur
-PLTR | 165.79706 | 169.75 | -0.30651 $ | -2.64 % | 521 s au moteur
-SMH | 479.590085 | 496.54 | -0.27893 $ | -3.79 % | 520 s au moteur
-NOW | 99.280335 | 101.45 | -0.26855 $ | -2.44 % | 527 s au moteur
-XLK | 167.85603 | 172.24 | -0.22800 $ | -2.87 % | 519 s au moteur
-META | 602.308695 | 619.99 | -0.21232 $ | -3.19 % | 523 s au moteur
-MSFT | 519.62006 | 524.09 | -0.21045 $ | -1.11 % | 517 s au moteur
-CSCO | 96.57169 | 100.64 | -0.19994 $ | -4.47 % | 522 s au moteur
-SMCI | 27.92603 | 28.1 | -0.18281 $ | -0.87 % | 526 s au moteur
-MU | 764.947335 | 774.09 | -0.16177 $ | -1.45 % | 497 s au moteur
-CRM | 213.483205 | 215.55 | -0.14876 $ | -1.22 % | 526 s au moteur
-GOOGL | 282.7775405 | 294.82 | -0.13334 $ | -4.52 % | 522 s au moteur
-XBI | 149.535195 | 150.83 | -0.11265 $ | -1.12 % | 522 s au moteur
-SNOW | 287.4112225 | 293.27 | -0.10370 $ | -2.29 % | 517 s au moteur
-MSTR | 113.3682875 | 113.55 | -0.10104 $ | -0.41 % | 531 s au moteur
-ETHUSDT | 2001.908545 | 2005.75 | -0.10061 $ | -0.44 % | prix Binance lors de cet export
-MS | 186.08691 | 189.15 | -0.08183 $ | -1.90 % | 527 s au moteur
-CAT | 560.33969 | 595.27 | -0.07910 $ | -6.49 % | 520 s au moteur
-KRE | 72.193885 | 72.375 | -0.06440 $ | -0.50 % | 507 s au moteur
-UNH | 397.391205 | 401.15 | -0.06302 $ | -1.20 % | 522 s au moteur
-MRK | 145.970978 | 147.535 | -0.05981 $ | -1.32 % | 518 s au moteur
-C | 118.170885 | 123.66 | -0.05080 $ | -4.90 % | 527 s au moteur
-NFLX | 62.7536075 | 63.07 | -0.04724 $ | -0.75 % | 518 s au moteur
-NKE | 38.090945 | 38.2 | -0.03561 $ | -0.54 % | 518 s au moteur
-PFE | 28.935525 | 29.165 | -0.01497 $ | -1.04 % | 521 s au moteur
-PANW | 319.230305 | 318.09 | +0.00182 $ | +0.11 % | 522 s au moteur
-TLT | 80.6846375 | 80.265 | +0.01440 $ | +0.27 % | 520 s au moteur
-BTCUSDT | 71827.14846 | 71540.1 | +0.02670 $ | +0.15 % | prix Binance lors de cet export
-SOLUSDT | 81.669145 | 81.22 | +0.03064 $ | +0.30 % | prix Binance lors de cet export
-DASH | 175.921995 | 174.79 | +0.03691 $ | +0.39 % | 521 s au moteur
-ADBE | 238.1598605 | 237.26 | +0.03865 $ | +0.13 % | 521 s au moteur
-F | 12.223885 | 12.01 | +0.05772 $ | +1.50 % | 517 s au moteur
-HG=F | 6.262867 | 6.16 | +0.06708 $ | +1.39 % | 1146 s au moteur
-COIN | 130.9345 | 129.955 | +0.08028 $ | +0.50 % | 524 s au moteur
-AFRM | 66.476745 | 65.735 | +0.10870 $ | +0.87 % | 530 s au moteur
-GLD | 357.471175 | 353.385 | +0.16984 $ | +0.89 % | 525 s au moteur
-SOFI | 16.061965 | 15.818 | +0.19374 $ | +1.27 % | 521 s au moteur
-SI=F | 50.29484 | 49.68 | +0.21757 $ | +0.97 % | 1129 s au moteur
-UPST | 20.16991 | 19.617 | +0.29907 $ | +2.50 % | 522 s au moteur
-GC=F | 3934.4318 | 3863.4 | +0.32763 $ | +1.56 % | 1122 s au moteur
-CRWD | 228.70559 | 224.365 | +0.32802 $ | +1.65 % | 521 s au moteur
+GS | 871.70393 | 918.92 | -2.47039 $ | -5.67 % | 29 s au moteur
+SHOP | 144.717605 | 147.872 | -2.38710 $ | -2.43 % | 34 s au moteur
+CL=F | 84.027965 | 87.19 | -1.29265 $ | -4.02 % | 878 s au moteur
+BZ=F | 91.07444 | 94.07 | -1.14993 $ | -3.54 % | 917 s au moteur
+BA | 170.664625 | 173.86 | -1.08842 $ | -2.13 % | 32 s au moteur
+XOM | 163.248335 | 167.91 | -0.93629 $ | -3.11 % | 54 s au moteur
+DKNG | 18.500745 | 18.83 | -0.90335 $ | -2.03 % | 27 s au moteur
+XLE | 60.519725 | 63.895 | -0.75602 $ | -5.84 % | 276 s au moteur
+CVX | 208.945475 | 214.52 | -0.74776 $ | -2.92 % | 28 s au moteur
+QQQ | 651.4431155 | 685.34 | -0.69630 $ | -5.46 % | 31 s au moteur
+NVDA | 159.490215 | 165.07 | -0.56732 $ | -3.75 % | 282 s au moteur
+SPY | 735.961835 | 757.1 | -0.46898 $ | -3.13 % | 38 s au moteur
+BAC | 50.044965 | 50.51 | -0.43689 $ | -1.18 % | 29 s au moteur
+MSTR | 113.3682875 | 114.82 | -0.37713 $ | -1.53 % | 281 s au moteur
+IWM | 271.494185 | 279.55 | -0.34915 $ | -3.22 % | 28 s au moteur
+PLTR | 165.79706 | 170.11 | -0.33178 $ | -2.86 % | 278 s au moteur
+ARKK | 72.933515 | 75.99 | -0.32397 $ | -4.45 % | 34 s au moteur
+SMH | 479.590085 | 497.63 | -0.29569 $ | -4.02 % | 275 s au moteur
+MSFT | 519.62006 | 526 | -0.28015 $ | -1.48 % | 274 s au moteur
+NOW | 99.280335 | 101.43 | -0.26633 $ | -2.42 % | 278 s au moteur
+XLK | 167.85603 | 172.72 | -0.25079 $ | -3.15 % | 278 s au moteur
+META | 602.308695 | 621.01 | -0.22360 $ | -3.36 % | 29 s au moteur
+MU | 764.947335 | 777.81 | -0.21622 $ | -1.93 % | 282 s au moteur
+CSCO | 96.57169 | 100.55 | -0.19577 $ | -4.38 % | 30 s au moteur
+XBI | 149.535195 | 151.9 | -0.18491 $ | -1.83 % | 29 s au moteur
+SMCI | 27.92603 | 28.085 | -0.17156 $ | -0.82 % | 282 s au moteur
+CRM | 213.483205 | 215.62 | -0.15276 $ | -1.25 % | 278 s au moteur
+GOOGL | 282.7775405 | 295.455 | -0.13998 $ | -4.74 % | 33 s au moteur
+MS | 186.08691 | 189.625 | -0.09285 $ | -2.15 % | 284 s au moteur
+UNH | 397.391205 | 403.275 | -0.09121 $ | -1.73 % | 29 s au moteur
+SNOW | 287.4112225 | 292.46 | -0.09093 $ | -2.01 % | 276 s au moteur
+CAT | 560.33969 | 594.915 | -0.07833 $ | -6.43 % | 35 s au moteur
+ETHUSDT | 2001.908545 | 2003.59 | -0.07603 $ | -0.33 % | 253 s au moteur
+NFLX | 62.7536075 | 63.26 | -0.06621 $ | -1.06 % | 275 s au moteur
+KRE | 72.193885 | 72.37 | -0.06351 $ | -0.49 % | 281 s au moteur
+MRK | 145.970978 | 147.61 | -0.06213 $ | -1.37 % | 275 s au moteur
+C | 118.170885 | 124.1 | -0.05466 $ | -5.27 % | 28 s au moteur
+UPST | 19.55022 | 19.55 | -0.02825 $ | -0.25 % | 253 s au moteur
+NKE | 38.090945 | 38.12 | -0.02166 $ | -0.33 % | 273 s au moteur
+PFE | 28.935525 | 29.174 | -0.01541 $ | -1.08 % | 29 s au moteur
+DASH | 175.921995 | 175.32 | +0.00867 $ | +0.09 % | 284 s au moteur
+TLT | 80.6846375 | 80.33 | +0.01011 $ | +0.19 % | 275 s au moteur
+PANW | 319.230305 | 315.61 | +0.01495 $ | +0.89 % | 30 s au moteur
+COIN | 130.9345 | 130.4 | +0.02554 $ | +0.16 % | 282 s au moteur
+F | 12.223885 | 12 | +0.06087 $ | +1.58 % | 274 s au moteur
+BTCUSDT | 71827.14846 | 71388.01 | +0.06441 $ | +0.36 % | prix Binance lors de cet export
+SOLUSDT | 81.669145 | 80.93 | +0.06687 $ | +0.66 % | prix Binance lors de cet export
+HG=F | 6.262867 | 6.157 | +0.06938 $ | +1.44 % | 629 s au moteur
+ADBE | 238.1598605 | 236.986 | +0.07335 $ | +0.24 % | 30 s au moteur
+SI=F | 50.29484 | 49.865 | +0.13530 $ | +0.61 % | 885 s au moteur
+SOFI | 16.061965 | 15.87 | +0.14432 $ | +0.95 % | 279 s au moteur
+GLD | 357.471175 | 353.53 | +0.16213 $ | +0.85 % | 281 s au moteur
+AFRM | 66.476745 | 65.44 | +0.16439 $ | +1.31 % | 280 s au moteur
+CRWD | 228.70559 | 225.09 | +0.26493 $ | +1.33 % | 275 s au moteur
+GC=F | 3934.4318 | 3865.9 | +0.31425 $ | +1.49 % | 874 s au moteur
+Crypto exportée au dernier prix moteur après échec réseau : ETHUSDT
 
-Dernier export du moteur utilisé : 2026-11-12T16:21:28+0100
+Dernier export du moteur utilisé : 2026-11-12T16:34:28+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Short Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
