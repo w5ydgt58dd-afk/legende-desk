@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-16T21:13:01+01:00 Europe/Paris
+Actualisé : 2026-11-16T21:15:01+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -3.1720 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -3.4028 $ | 6 gagnants / 11 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 996.4504 $ | tickets engagés 340.0000 $ | budget libre 656.4504 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 3 L | PnL réalisé -3.55 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3866.8 | -1.41892 $ | -7.09 % | 629 s au moteur
-GS | 921.6656025 | 890.925 | -0.71606 $ | -3.58 % | 24 s au moteur
-SPY | 761.590605 | 740.115 | -0.61311 $ | -3.07 % | 27 s au moteur
-MCD | 282.891375 | 275.49 | -0.57247 $ | -2.86 % | 41 s au moteur
-UBER | 71.245605 | 69.705 | -0.48182 $ | -2.41 % | 30 s au moteur
-NG=F | 3.1845915 | 3.136 | -0.35470 $ | -1.77 % | 627 s au moteur
-ADBE | 249.9899325 | 247.48 | -0.25049 $ | -1.25 % | 30 s au moteur
-AAPL | 355.207515 | 352.105 | -0.22442 $ | -1.12 % | 19 s au moteur
-ABNB | 188.15403 | 186.53 | -0.22236 $ | -1.11 % | 19 s au moteur
-WMT | 128.6392875 | 128.23 | -0.11353 $ | -0.57 % | 19 s au moteur
-LLY | 1432.73601 | 1437.85 | +0.02129 $ | +0.11 % | 20 s au moteur
-UNH | 408.38409 | 410 | +0.02903 $ | +0.15 % | 23 s au moteur
-T | 22.13106 | 22.31 | +0.11148 $ | +0.56 % | 19 s au moteur
-PEP | 143.9969625 | 146.535 | +0.30199 $ | +1.51 % | 19 s au moteur
-PG | 169.674795 | 172.735 | +0.31018 $ | +1.55 % | 50 s au moteur
-KO | 96.8534025 | 99.275 | +0.44931 $ | +2.25 % | 19 s au moteur
-COST | 1076.848155 | 1110.42 | +0.57260 $ | +2.86 % | 21 s au moteur
+GC=F | 4151.37465 | 3867 | -1.41796 $ | -7.09 % | 630 s au moteur
+GS | 921.6656025 | 890.435 | -0.72667 $ | -3.63 % | 26 s au moteur
+SPY | 761.590605 | 739.29 | -0.63474 $ | -3.17 % | 16 s au moteur
+MCD | 282.891375 | 275.355 | -0.58200 $ | -2.91 % | 29 s au moteur
+UBER | 71.245605 | 69.73 | -0.47481 $ | -2.37 % | 22 s au moteur
+NG=F | 3.1845915 | 3.138 | -0.34216 $ | -1.71 % | 619 s au moteur
+ADBE | 249.9899325 | 246.745 | -0.30921 $ | -1.55 % | 15 s au moteur
+ABNB | 188.15403 | 186.205 | -0.25685 $ | -1.28 % | 16 s au moteur
+AAPL | 355.207515 | 351.835 | -0.23960 $ | -1.20 % | 16 s au moteur
+WMT | 128.6392875 | 128.07 | -0.13837 $ | -0.69 % | 19 s au moteur
+LLY | 1432.73601 | 1435.87 | -0.00631 $ | -0.03 % | 17 s au moteur
+UNH | 408.38409 | 409.895 | +0.02389 $ | +0.12 % | 17 s au moteur
+T | 22.13106 | 22.32 | +0.12050 $ | +0.60 % | 16 s au moteur
+PEP | 143.9969625 | 146.37 | +0.27911 $ | +1.40 % | 19 s au moteur
+PG | 169.674795 | 172.64 | +0.29900 $ | +1.50 % | 19 s au moteur
+KO | 96.8534025 | 99.205 | +0.43488 $ | +2.17 % | 17 s au moteur
+COST | 1076.848155 | 1110.2 | +0.56852 $ | +2.84 % | 18 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-16T21:12:42+0100
+Dernier export du moteur utilisé : 2026-11-16T21:14:42+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
