@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-16T19:44:15+01:00 Europe/Paris
+Actualisé : 2026-11-16T19:53:03+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -3.4169 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -3.4885 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 996.4504 $ | tickets engagés 340.0000 $ | budget libre 656.4504 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 3 L | PnL réalisé -3.55 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3849.2 | -1.50359 $ | -7.52 % | 615 s au moteur
-GS | 921.6656025 | 885.725 | -0.82873 $ | -4.14 % | 14 s au moteur
-SPY | 761.590605 | 739.875 | -0.61940 $ | -3.10 % | 19 s au moteur
-MCD | 282.891375 | 275.435 | -0.57635 $ | -2.88 % | 40 s au moteur
-NG=F | 3.1845915 | 3.111 | -0.51147 $ | -2.56 % | 617 s au moteur
-UBER | 71.245605 | 69.615 | -0.50705 $ | -2.54 % | 15 s au moteur
-ABNB | 188.15403 | 185.62 | -0.31894 $ | -1.59 % | 17 s au moteur
-AAPL | 355.207515 | 352.135 | -0.22273 $ | -1.11 % | 22 s au moteur
-ADBE | 249.9899325 | 248.11 | -0.20017 $ | -1.00 % | 14 s au moteur
-WMT | 128.6392875 | 128.26 | -0.10887 $ | -0.54 % | 16 s au moteur
-UNH | 408.38409 | 410.58 | +0.05739 $ | +0.29 % | 18 s au moteur
-LLY | 1432.73601 | 1441.385 | +0.07056 $ | +0.35 % | 23 s au moteur
-T | 22.13106 | 22.285 | +0.08892 $ | +0.44 % | 19 s au moteur
-PG | 169.674795 | 172.845 | +0.32313 $ | +1.62 % | 14 s au moteur
-PEP | 143.9969625 | 147.385 | +0.41988 $ | +2.10 % | 21 s au moteur
-KO | 96.8534025 | 99.34 | +0.46272 $ | +2.31 % | 16 s au moteur
-COST | 1076.848155 | 1109.62 | +0.55776 $ | +2.79 % | 21 s au moteur
+GC=F | 4151.37465 | 3850.6 | -1.49685 $ | -7.48 % | 633 s au moteur
+GS | 921.6656025 | 885.42 | -0.83533 $ | -4.18 % | 38 s au moteur
+SPY | 761.590605 | 739.73 | -0.62321 $ | -3.12 % | 20 s au moteur
+MCD | 282.891375 | 275.595 | -0.56506 $ | -2.83 % | 26 s au moteur
+UBER | 71.245605 | 69.57 | -0.51966 $ | -2.60 % | 27 s au moteur
+NG=F | 3.1845915 | 3.116 | -0.48012 $ | -2.40 % | 620 s au moteur
+ABNB | 188.15403 | 185.49 | -0.33274 $ | -1.66 % | 25 s au moteur
+AAPL | 355.207515 | 351.94 | -0.23369 $ | -1.17 % | 17 s au moteur
+ADBE | 249.9899325 | 248.1 | -0.20096 $ | -1.00 % | 18 s au moteur
+WMT | 128.6392875 | 128.205 | -0.11741 $ | -0.59 % | 17 s au moteur
+UNH | 408.38409 | 410.21 | +0.03930 $ | +0.20 % | 27 s au moteur
+LLY | 1432.73601 | 1440.965 | +0.06471 $ | +0.32 % | 20 s au moteur
+T | 22.13106 | 22.275 | +0.07989 $ | +0.40 % | 25 s au moteur
+PG | 169.674795 | 172.79 | +0.31666 $ | +1.58 % | 23 s au moteur
+PEP | 143.9969625 | 147.345 | +0.41433 $ | +2.07 % | 17 s au moteur
+KO | 96.8534025 | 99.32 | +0.45859 $ | +2.29 % | 23 s au moteur
+COST | 1076.848155 | 1108.825 | +0.54302 $ | +2.72 % | 22 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-16T19:43:58+0100
+Dernier export du moteur utilisé : 2026-11-16T19:52:45+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
