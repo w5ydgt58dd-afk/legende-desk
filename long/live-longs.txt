@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-16T20:00:03+01:00 Europe/Paris
+Actualisé : 2026-11-16T20:16:38+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -2.7386 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -2.8908 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 996.4504 $ | tickets engagés 340.0000 $ | budget libre 656.4504 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 3 L | PnL réalisé -3.55 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3855.5 | -1.47328 $ | -7.37 % | 629 s au moteur
-GS | 921.6656025 | 889.24 | -0.75257 $ | -3.76 % | 57 s au moteur
-SPY | 761.590605 | 741.805 | -0.56880 $ | -2.84 % | 28 s au moteur
-MCD | 282.891375 | 275.76 | -0.55341 $ | -2.77 % | 11 s au moteur
-UBER | 71.245605 | 69.9 | -0.42716 $ | -2.14 % | 23 s au moteur
-NG=F | 3.1845915 | 3.126 | -0.41741 $ | -2.09 % | 608 s au moteur
-ABNB | 188.15403 | 186.46 | -0.22979 $ | -1.15 % | 24 s au moteur
-AAPL | 355.207515 | 353.22 | -0.16173 $ | -0.81 % | 31 s au moteur
-ADBE | 249.9899325 | 248.825 | -0.14305 $ | -0.72 % | 25 s au moteur
-WMT | 128.6392875 | 128.475 | -0.07549 $ | -0.38 % | 25 s au moteur
-UNH | 408.38409 | 410.465 | +0.05177 $ | +0.26 % | 22 s au moteur
-LLY | 1432.73601 | 1442.62 | +0.08778 $ | +0.44 % | 24 s au moteur
-T | 22.13106 | 22.33 | +0.12952 $ | +0.65 % | 24 s au moteur
-PG | 169.674795 | 172.915 | +0.33137 $ | +1.66 % | 30 s au moteur
-PEP | 143.9969625 | 147.39 | +0.42057 $ | +2.10 % | 29 s au moteur
-KO | 96.8534025 | 99.385 | +0.47200 $ | +2.36 % | 26 s au moteur
-COST | 1076.848155 | 1110.34 | +0.57111 $ | +2.86 % | 35 s au moteur
+GC=F | 4151.37465 | 3857.3 | -1.46462 $ | -7.32 % | 627 s au moteur
+GS | 921.6656025 | 888.26 | -0.77380 $ | -3.87 % | 40 s au moteur
+SPY | 761.590605 | 741.09 | -0.58755 $ | -2.94 % | 24 s au moteur
+MCD | 282.891375 | 275.77 | -0.55271 $ | -2.76 % | 56 s au moteur
+UBER | 71.245605 | 69.82 | -0.44958 $ | -2.25 % | 40 s au moteur
+NG=F | 3.1845915 | 3.129 | -0.39859 $ | -1.99 % | 651 s au moteur
+ABNB | 188.15403 | 186.202 | -0.25717 $ | -1.29 % | 33 s au moteur
+AAPL | 355.207515 | 352.9 | -0.17972 $ | -0.90 % | 30 s au moteur
+ADBE | 249.9899325 | 248.57 | -0.16342 $ | -0.82 % | 30 s au moteur
+WMT | 128.6392875 | 128.43 | -0.08248 $ | -0.41 % | 24 s au moteur
+UNH | 408.38409 | 410.36 | +0.04663 $ | +0.23 % | 33 s au moteur
+LLY | 1432.73601 | 1441.68 | +0.07467 $ | +0.37 % | 25 s au moteur
+T | 22.13106 | 22.32 | +0.12050 $ | +0.60 % | 25 s au moteur
+PG | 169.674795 | 172.85 | +0.32372 $ | +1.62 % | 27 s au moteur
+PEP | 143.9969625 | 147.37 | +0.41779 $ | +2.09 % | 26 s au moteur
+KO | 96.8534025 | 99.355 | +0.46581 $ | +2.33 % | 30 s au moteur
+COST | 1076.848155 | 1110.265 | +0.56972 $ | +2.85 % | 30 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-16T19:59:46+0100
+Dernier export du moteur utilisé : 2026-11-16T20:00:46+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
