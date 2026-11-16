@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-16T20:56:35+01:00 Europe/Paris
+Actualisé : 2026-11-16T21:03:04+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -3.2390 $ | 6 gagnants / 11 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -3.2095 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 996.4504 $ | tickets engagés 340.0000 $ | budget libre 656.4504 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 3 L | PnL réalisé -3.55 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3866.4 | -1.42085 $ | -7.10 % | 620 s au moteur
-GS | 921.6656025 | 892.24 | -0.68756 $ | -3.44 % | 21 s au moteur
-MCD | 282.891375 | 274.94 | -0.61130 $ | -3.06 % | 18 s au moteur
-SPY | 761.590605 | 740.758 | -0.59625 $ | -2.98 % | 20 s au moteur
-UBER | 71.245605 | 69.63 | -0.50284 $ | -2.51 % | 13 s au moteur
-NG=F | 3.1845915 | 3.137 | -0.34843 $ | -1.74 % | 617 s au moteur
-ADBE | 249.9899325 | 247.58 | -0.24250 $ | -1.21 % | 12 s au moteur
-ABNB | 188.15403 | 186.485 | -0.22714 $ | -1.14 % | 13 s au moteur
-AAPL | 355.207515 | 352.33 | -0.21177 $ | -1.06 % | 19 s au moteur
-WMT | 128.6392875 | 128.21 | -0.11663 $ | -0.58 % | 13 s au moteur
-LLY | 1432.73601 | 1435.185 | -0.01586 $ | -0.08 % | 15 s au moteur
-UNH | 408.38409 | 409.95 | +0.02658 $ | +0.13 % | 11 s au moteur
-T | 22.13106 | 22.315 | +0.11599 $ | +0.58 % | 12 s au moteur
-PG | 169.674795 | 172.575 | +0.29135 $ | +1.46 % | 15 s au moteur
-PEP | 143.9969625 | 146.483 | +0.29478 $ | +1.47 % | 13 s au moteur
-KO | 96.8534025 | 99.295 | +0.45344 $ | +2.27 % | 13 s au moteur
-COST | 1076.848155 | 1109.74 | +0.55999 $ | +2.80 % | 13 s au moteur
+GC=F | 4151.37465 | 3867.1 | -1.41748 $ | -7.09 % | 658 s au moteur
+GS | 921.6656025 | 890.93 | -0.71595 $ | -3.58 % | 62 s au moteur
+SPY | 761.590605 | 740.245 | -0.60970 $ | -3.05 % | 64 s au moteur
+MCD | 282.891375 | 275.37 | -0.58094 $ | -2.90 % | 62 s au moteur
+UBER | 71.245605 | 69.68 | -0.48883 $ | -2.44 % | 55 s au moteur
+NG=F | 3.1845915 | 3.136 | -0.35470 $ | -1.77 % | 671 s au moteur
+ADBE | 249.9899325 | 247.485 | -0.25009 $ | -1.25 % | 63 s au moteur
+ABNB | 188.15403 | 186.52 | -0.22342 $ | -1.12 % | 55 s au moteur
+AAPL | 355.207515 | 352.2 | -0.21907 $ | -1.10 % | 57 s au moteur
+WMT | 128.6392875 | 128.195 | -0.11896 $ | -0.59 % | 56 s au moteur
+LLY | 1432.73601 | 1436.78 | +0.00638 $ | +0.03 % | 57 s au moteur
+UNH | 408.38409 | 409.9 | +0.02414 $ | +0.12 % | 60 s au moteur
+T | 22.13106 | 22.325 | +0.12501 $ | +0.63 % | 58 s au moteur
+PEP | 143.9969625 | 146.52 | +0.29991 $ | +1.50 % | 62 s au moteur
+PG | 169.674795 | 172.708 | +0.30701 $ | +1.54 % | 59 s au moteur
+KO | 96.8534025 | 99.255 | +0.44519 $ | +2.23 % | 65 s au moteur
+COST | 1076.848155 | 1109.85 | +0.56202 $ | +2.81 % | 64 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-16T20:56:21+0100
+Dernier export du moteur utilisé : 2026-11-16T21:02:12+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
