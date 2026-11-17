@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-17T19:23:03+01:00 Europe/Paris
+Actualisé : 2026-11-17T19:24:03+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -6.2870 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -6.3405 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 995.5878 $ | tickets engagés 340.0000 $ | budget libre 655.5878 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 4 L | PnL réalisé -4.41 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3863.2 | -1.43624 $ | -7.18 % | 617 s au moteur
-GS | 921.6656025 | 875.12 | -1.05851 $ | -5.29 % | 22 s au moteur
-ADBE | 249.9899325 | 237.425 | -1.05372 $ | -5.27 % | 17 s au moteur
-SPY | 761.590605 | 731.56 | -0.83744 $ | -4.19 % | 16 s au moteur
-UNH | 408.38409 | 396.265 | -0.64261 $ | -3.21 % | 15 s au moteur
-UBER | 71.245605 | 69.145 | -0.63879 $ | -3.19 % | 17 s au moteur
-ABNB | 188.15403 | 182.995 | -0.59755 $ | -2.99 % | 35 s au moteur
-MCD | 282.891375 | 276.67 | -0.48917 $ | -2.45 % | 16 s au moteur
-DIS | 120.3951675 | 118.73 | -0.32619 $ | -1.63 % | 17 s au moteur
-AAPL | 355.207515 | 350.58 | -0.31015 $ | -1.55 % | 17 s au moteur
-LLY | 1432.73601 | 1415.863 | -0.28517 $ | -1.43 % | 21 s au moteur
-WMT | 128.6392875 | 127.68 | -0.19891 $ | -0.99 % | 15 s au moteur
-PEP | 143.9969625 | 143.485 | -0.12099 $ | -0.60 % | 16 s au moteur
-T | 22.13106 | 22.515 | +0.29646 $ | +1.48 % | 18 s au moteur
-PG | 169.674795 | 172.85 | +0.32372 $ | +1.62 % | 24 s au moteur
-KO | 96.8534025 | 99.185 | +0.43076 $ | +2.15 % | 16 s au moteur
-COST | 1076.848155 | 1115 | +0.65753 $ | +3.29 % | 34 s au moteur
+GC=F | 4151.37465 | 3863.5 | -1.43480 $ | -7.17 % | 615 s au moteur
+GS | 921.6656025 | 874.685 | -1.06793 $ | -5.34 % | 25 s au moteur
+ADBE | 249.9899325 | 237.275 | -1.06570 $ | -5.33 % | 16 s au moteur
+SPY | 761.590605 | 731.39 | -0.84189 $ | -4.21 % | 20 s au moteur
+UBER | 71.245605 | 69.085 | -0.65560 $ | -3.28 % | 15 s au moteur
+UNH | 408.38409 | 396.27 | -0.64237 $ | -3.21 % | 13 s au moteur
+ABNB | 188.15403 | 182.82 | -0.61613 $ | -3.08 % | 14 s au moteur
+MCD | 282.891375 | 276.638 | -0.49143 $ | -2.46 % | 15 s au moteur
+DIS | 120.3951675 | 118.65 | -0.33946 $ | -1.70 % | 14 s au moteur
+AAPL | 355.207515 | 350.5 | -0.31465 $ | -1.57 % | 14 s au moteur
+LLY | 1432.73601 | 1415.985 | -0.28347 $ | -1.42 % | 26 s au moteur
+WMT | 128.6392875 | 127.7 | -0.19581 $ | -0.98 % | 18 s au moteur
+PEP | 143.9969625 | 143.52 | -0.11614 $ | -0.58 % | 27 s au moteur
+T | 22.13106 | 22.52 | +0.30097 $ | +1.50 % | 18 s au moteur
+PG | 169.674795 | 172.895 | +0.32901 $ | +1.65 % | 17 s au moteur
+KO | 96.8534025 | 99.22 | +0.43797 $ | +2.19 % | 21 s au moteur
+COST | 1076.848155 | 1114.965 | +0.65688 $ | +3.28 % | 39 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-17T19:22:49+0100
+Dernier export du moteur utilisé : 2026-11-17T19:23:49+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
