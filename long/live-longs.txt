@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-17T15:32:40+01:00 Europe/Paris
+Actualisé : 2026-11-17T15:44:20+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -5.4067 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -5.8786 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 995.5878 $ | tickets engagés 340.0000 $ | budget libre 655.5878 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 4 L | PnL réalisé -4.41 $
-83 places libres sur 100. Nouveaux signaux frais : 1.
+83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3865.1 | -1.42710 $ | -7.14 % | 621 s au moteur
-GS | 921.6656025 | 884.38 | -0.85787 $ | -4.29 % | 17 s au moteur
-ADBE | 249.9899325 | 240.722 | -0.79034 $ | -3.95 % | 15 s au moteur
-MCD | 282.891375 | 273.195 | -0.73448 $ | -3.67 % | 16 s au moteur
-UNH | 408.38409 | 395.775 | -0.66658 $ | -3.33 % | 15 s au moteur
-SPY | 761.590605 | 738.45 | -0.65677 $ | -3.28 % | 16 s au moteur
-UBER | 71.245605 | 69.58 | -0.51686 $ | -2.58 % | 17 s au moteur
-ABNB | 188.15403 | 185.255 | -0.35768 $ | -1.79 % | 17 s au moteur
-DIS | 120.3951675 | 119.41 | -0.21340 $ | -1.07 % | 25 s au moteur
-AAPL | 355.207515 | 352.47 | -0.20389 $ | -1.02 % | 16 s au moteur
-PEP | 143.9969625 | 143.32 | -0.14387 $ | -0.72 % | 16 s au moteur
-LLY | 1432.73601 | 1426.005 | -0.14381 $ | -0.72 % | 15 s au moteur
-WMT | 128.6392875 | 128.545 | -0.06463 $ | -0.32 % | 15 s au moteur
-T | 22.13106 | 22.29 | +0.09343 $ | +0.47 % | 15 s au moteur
-PG | 169.674795 | 171.705 | +0.18896 $ | +0.94 % | 27 s au moteur
-KO | 96.8534025 | 98.88 | +0.36787 $ | +1.84 % | 16 s au moteur
-COST | 1076.848155 | 1118.387 | +0.72034 $ | +3.60 % | 23 s au moteur
+GC=F | 4151.37465 | 3871.4 | -1.39680 $ | -6.98 % | 624 s au moteur
+ADBE | 249.9899325 | 239.08 | -0.92151 $ | -4.61 % | 22 s au moteur
+UNH | 408.38409 | 390.68 | -0.91572 $ | -4.58 % | 20 s au moteur
+GS | 921.6656025 | 888.12 | -0.77683 $ | -3.88 % | 22 s au moteur
+SPY | 761.590605 | 738.15 | -0.66464 $ | -3.32 % | 28 s au moteur
+UBER | 71.245605 | 69.095 | -0.65280 $ | -3.26 % | 22 s au moteur
+MCD | 282.891375 | 275.155 | -0.59612 $ | -2.98 % | 27 s au moteur
+DIS | 120.3951675 | 118.81 | -0.31292 $ | -1.56 % | 26 s au moteur
+ABNB | 188.15403 | 186.35 | -0.24146 $ | -1.21 % | 28 s au moteur
+PEP | 143.9969625 | 142.81 | -0.21460 $ | -1.07 % | 22 s au moteur
+AAPL | 355.207515 | 352.89 | -0.18028 $ | -0.90 % | 27 s au moteur
+LLY | 1432.73601 | 1424.135 | -0.16987 $ | -0.85 % | 20 s au moteur
+WMT | 128.6392875 | 127.94 | -0.15855 $ | -0.79 % | 22 s au moteur
+T | 22.13106 | 22.295 | +0.09794 $ | +0.49 % | 20 s au moteur
+PG | 169.674795 | 171.85 | +0.20602 $ | +1.03 % | 22 s au moteur
+KO | 96.8534025 | 98.91 | +0.37406 $ | +1.87 % | 21 s au moteur
+COST | 1076.848155 | 1114.35 | +0.64548 $ | +3.23 % | 22 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-17T15:32:36+0100
+Dernier export du moteur utilisé : 2026-11-17T15:44:20+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
