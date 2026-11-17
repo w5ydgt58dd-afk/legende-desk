@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-17T17:31:51+01:00 Europe/Paris
+Actualisé : 2026-11-17T17:44:17+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -6.7733 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -6.6664 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 995.5878 $ | tickets engagés 340.0000 $ | budget libre 655.5878 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 4 L | PnL réalisé -4.41 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3870.3 | -1.40209 $ | -7.01 % | 631 s au moteur
-ADBE | 249.9899325 | 234.74 | -1.26820 $ | -6.34 % | 32 s au moteur
-GS | 921.6656025 | 872.285 | -1.11993 $ | -5.60 % | 34 s au moteur
-UBER | 71.245605 | 67.47 | -1.10829 $ | -5.54 % | 30 s au moteur
-SPY | 761.590605 | 730.72 | -0.85946 $ | -4.30 % | 29 s au moteur
-ABNB | 188.15403 | 181.9 | -0.71377 $ | -3.57 % | 40 s au moteur
-UNH | 408.38409 | 397.35 | -0.58956 $ | -2.95 % | 29 s au moteur
-MCD | 282.891375 | 276.85 | -0.47647 $ | -2.38 % | 27 s au moteur
-LLY | 1432.73601 | 1414.6 | -0.30278 $ | -1.51 % | 32 s au moteur
-DIS | 120.3951675 | 119.31 | -0.22999 $ | -1.15 % | 29 s au moteur
-AAPL | 355.207515 | 352.1 | -0.22470 $ | -1.12 % | 29 s au moteur
-WMT | 128.6392875 | 127.52 | -0.22375 $ | -1.12 % | 27 s au moteur
-PEP | 143.9969625 | 143.65 | -0.09811 $ | -0.49 % | 47 s au moteur
-PG | 169.674795 | 172.845 | +0.32313 $ | +1.62 % | 33 s au moteur
-KO | 96.8534025 | 98.99 | +0.39055 $ | +1.95 % | 32 s au moteur
-T | 22.13106 | 22.675 | +0.44084 $ | +2.20 % | 28 s au moteur
-COST | 1076.848155 | 1116.71 | +0.68924 $ | +3.45 % | 38 s au moteur
+GC=F | 4151.37465 | 3866.4 | -1.42085 $ | -7.10 % | 1257 s au moteur
+ADBE | 249.9899325 | 235.44 | -1.21229 $ | -6.06 % | 654 s au moteur
+GS | 921.6656025 | 871.93 | -1.12763 $ | -5.64 % | 655 s au moteur
+UBER | 71.245605 | 67.57 | -1.08026 $ | -5.40 % | 653 s au moteur
+SPY | 761.590605 | 730.31 | -0.87021 $ | -4.35 % | 653 s au moteur
+ABNB | 188.15403 | 182.235 | -0.67822 $ | -3.39 % | 651 s au moteur
+UNH | 408.38409 | 397.48 | -0.58320 $ | -2.92 % | 655 s au moteur
+MCD | 282.891375 | 276.92 | -0.47152 $ | -2.36 % | 665 s au moteur
+LLY | 1432.73601 | 1416.935 | -0.27023 $ | -1.35 % | 657 s au moteur
+WMT | 128.6392875 | 127.49 | -0.22841 $ | -1.14 % | 652 s au moteur
+AAPL | 355.207515 | 352.05 | -0.22751 $ | -1.14 % | 660 s au moteur
+DIS | 120.3951675 | 119.388 | -0.21705 $ | -1.09 % | 653 s au moteur
+PEP | 143.9969625 | 143.7 | -0.09117 $ | -0.46 % | 652 s au moteur
+PG | 169.674795 | 172.88 | +0.32725 $ | +1.64 % | 664 s au moteur
+KO | 96.8534025 | 98.99 | +0.39055 $ | +1.95 % | 661 s au moteur
+T | 22.13106 | 22.645 | +0.41376 $ | +2.07 % | 653 s au moteur
+COST | 1076.848155 | 1116.24 | +0.68053 $ | +3.40 % | 676 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-17T17:31:50+0100
+Dernier export du moteur utilisé : 2026-11-17T17:33:38+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
