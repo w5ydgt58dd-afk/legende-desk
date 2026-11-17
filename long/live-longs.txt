@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-17T21:52:55+01:00 Europe/Paris
+Actualisé : 2026-11-17T21:53:55+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -8.1881 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -8.2691 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 995.5878 $ | tickets engagés 340.0000 $ | budget libre 655.5878 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 4 L | PnL réalisé -4.41 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3853.1 | -1.48483 $ | -7.42 % | 630 s au moteur
-ADBE | 249.9899325 | 235.615 | -1.19831 $ | -5.99 % | 22 s au moteur
-GS | 921.6656025 | 875.59 | -1.04832 $ | -5.24 % | 25 s au moteur
-UNH | 408.38409 | 389.185 | -0.98883 $ | -4.94 % | 23 s au moteur
-SPY | 761.590605 | 729.85 | -0.88227 $ | -4.41 % | 23 s au moteur
-ABNB | 188.15403 | 180.635 | -0.84803 $ | -4.24 % | 24 s au moteur
-UBER | 71.245605 | 68.73 | -0.75511 $ | -3.78 % | 24 s au moteur
-DIS | 120.3951675 | 116.81 | -0.64466 $ | -3.22 % | 22 s au moteur
-MCD | 282.891375 | 275.88 | -0.54494 $ | -2.72 % | 24 s au moteur
-LLY | 1432.73601 | 1412.35 | -0.33414 $ | -1.67 % | 23 s au moteur
-PEP | 143.9969625 | 142.12 | -0.31029 $ | -1.55 % | 24 s au moteur
-AAPL | 355.207515 | 351.14 | -0.27867 $ | -1.39 % | 23 s au moteur
-WMT | 128.6392875 | 127.46 | -0.23306 $ | -1.17 % | 22 s au moteur
-T | 22.13106 | 22.365 | +0.16111 $ | +0.81 % | 23 s au moteur
-PG | 169.674795 | 171.87 | +0.20838 $ | +1.04 % | 24 s au moteur
-KO | 96.8534025 | 99.075 | +0.40808 $ | +2.04 % | 23 s au moteur
-COST | 1076.848155 | 1111.13 | +0.58576 $ | +2.93 % | 24 s au moteur
+GC=F | 4151.37465 | 3852.8 | -1.48627 $ | -7.43 % | 628 s au moteur
+ADBE | 249.9899325 | 235.75 | -1.18752 $ | -5.94 % | 22 s au moteur
+GS | 921.6656025 | 875.84 | -1.04291 $ | -5.21 % | 27 s au moteur
+UNH | 408.38409 | 389.23 | -0.98663 $ | -4.93 % | 23 s au moteur
+SPY | 761.590605 | 729.405 | -0.89394 $ | -4.47 % | 27 s au moteur
+ABNB | 188.15403 | 180.64 | -0.84750 $ | -4.24 % | 24 s au moteur
+UBER | 71.245605 | 68.82 | -0.72988 $ | -3.65 % | 25 s au moteur
+DIS | 120.3951675 | 116.79 | -0.64798 $ | -3.24 % | 23 s au moteur
+MCD | 282.891375 | 275.63 | -0.56259 $ | -2.81 % | 27 s au moteur
+LLY | 1432.73601 | 1411.61 | -0.34445 $ | -1.72 % | 23 s au moteur
+PEP | 143.9969625 | 142.045 | -0.32070 $ | -1.60 % | 23 s au moteur
+AAPL | 355.207515 | 351.085 | -0.28176 $ | -1.41 % | 29 s au moteur
+WMT | 128.6392875 | 127.51 | -0.22530 $ | -1.13 % | 22 s au moteur
+T | 22.13106 | 22.315 | +0.11599 $ | +0.58 % | 22 s au moteur
+PG | 169.674795 | 171.8 | +0.20014 $ | +1.00 % | 23 s au moteur
+KO | 96.8534025 | 99.04 | +0.40086 $ | +2.00 % | 25 s au moteur
+COST | 1076.848155 | 1110.35 | +0.57130 $ | +2.86 % | 26 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-17T21:52:52+0100
+Dernier export du moteur utilisé : 2026-11-17T21:53:52+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
