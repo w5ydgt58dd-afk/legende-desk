@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-17T20:33:04+01:00 Europe/Paris
+Actualisé : 2026-11-17T20:43:30+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -7.3550 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -7.3416 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 995.5878 $ | tickets engagés 340.0000 $ | budget libre 655.5878 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 4 L | PnL réalisé -4.41 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3859.3 | -1.45500 $ | -7.28 % | 636 s au moteur
-GS | 921.6656025 | 873.45 | -1.09469 $ | -5.47 % | 32 s au moteur
-ADBE | 249.9899325 | 237.37 | -1.05811 $ | -5.29 % | 38 s au moteur
-SPY | 761.590605 | 730.89 | -0.85500 $ | -4.28 % | 28 s au moteur
-UNH | 408.38409 | 392.36 | -0.83357 $ | -4.17 % | 28 s au moteur
-UBER | 71.245605 | 68.77 | -0.74390 $ | -3.72 % | 29 s au moteur
-ABNB | 188.15403 | 182.4 | -0.66070 $ | -3.30 % | 29 s au moteur
-MCD | 282.891375 | 276.43 | -0.50611 $ | -2.53 % | 52 s au moteur
-DIS | 120.3951675 | 117.71 | -0.49538 $ | -2.48 % | 28 s au moteur
-LLY | 1432.73601 | 1405.76 | -0.42599 $ | -2.13 % | 28 s au moteur
-AAPL | 355.207515 | 350.37 | -0.32196 $ | -1.61 % | 32 s au moteur
-PEP | 143.9969625 | 142.53 | -0.25343 $ | -1.27 % | 28 s au moteur
-WMT | 128.6392875 | 127.51 | -0.22530 $ | -1.13 % | 28 s au moteur
-T | 22.13106 | 22.445 | +0.23329 $ | +1.17 % | 27 s au moteur
-PG | 169.674795 | 172.29 | +0.25781 $ | +1.29 % | 27 s au moteur
-KO | 96.8534025 | 99.155 | +0.42457 $ | +2.12 % | 29 s au moteur
-COST | 1076.848155 | 1115.05 | +0.65846 $ | +3.29 % | 28 s au moteur
+GC=F | 4151.37465 | 3858.6 | -1.45837 $ | -7.29 % | 1206 s au moteur
+GS | 921.6656025 | 873.235 | -1.09935 $ | -5.50 % | 599 s au moteur
+ADBE | 249.9899325 | 237.215 | -1.07049 $ | -5.35 % | 590 s au moteur
+SPY | 761.590605 | 730.87 | -0.85553 $ | -4.28 % | 596 s au moteur
+UNH | 408.38409 | 392.185 | -0.84213 $ | -4.21 % | 592 s au moteur
+UBER | 71.245605 | 68.81 | -0.73269 $ | -3.66 % | 593 s au moteur
+ABNB | 188.15403 | 182.44 | -0.65646 $ | -3.28 % | 616 s au moteur
+MCD | 282.891375 | 276.496 | -0.50146 $ | -2.51 % | 596 s au moteur
+DIS | 120.3951675 | 117.77 | -0.48543 $ | -2.43 % | 595 s au moteur
+LLY | 1432.73601 | 1406.25 | -0.41916 $ | -2.10 % | 593 s au moteur
+AAPL | 355.207515 | 350.37 | -0.32196 $ | -1.61 % | 599 s au moteur
+PEP | 143.9969625 | 142.53 | -0.25343 $ | -1.27 % | 592 s au moteur
+WMT | 128.6392875 | 127.51 | -0.22530 $ | -1.13 % | 590 s au moteur
+T | 22.13106 | 22.44 | +0.22878 $ | +1.14 % | 594 s au moteur
+PG | 169.674795 | 172.335 | +0.26310 $ | +1.32 % | 597 s au moteur
+KO | 96.8534025 | 99.18 | +0.42973 $ | +2.15 % | 602 s au moteur
+COST | 1076.848155 | 1115.055 | +0.65855 $ | +3.29 % | 603 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-17T20:32:45+0100
+Dernier export du moteur utilisé : 2026-11-17T20:33:45+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
