@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-17T18:19:38+01:00 Europe/Paris
+Actualisé : 2026-11-17T18:29:57+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -5.5585 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -5.4721 $ | 4 gagnants / 13 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 995.5878 $ | tickets engagés 340.0000 $ | budget libre 655.5878 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 4 L | PnL réalisé -4.41 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GC=F | 4151.37465 | 3872.6 | -1.39102 $ | -6.96 % | 611 s au moteur
-ADBE | 249.9899325 | 237.09 | -1.08048 $ | -5.40 % | 14 s au moteur
-GS | 921.6656025 | 878.44 | -0.98657 $ | -4.93 % | 21 s au moteur
-UBER | 71.245605 | 68.44 | -0.83640 $ | -4.18 % | 10 s au moteur
-SPY | 761.590605 | 733.97 | -0.77424 $ | -3.87 % | 20 s au moteur
-UNH | 408.38409 | 398.285 | -0.54384 $ | -2.72 % | 12 s au moteur
-ABNB | 188.15403 | 184.16 | -0.47390 $ | -2.37 % | 10 s au moteur
-MCD | 282.891375 | 277.27 | -0.44682 $ | -2.23 % | 29 s au moteur
-LLY | 1432.73601 | 1415.95 | -0.28396 $ | -1.42 % | 11 s au moteur
-AAPL | 355.207515 | 351.86 | -0.23819 $ | -1.19 % | 18 s au moteur
-WMT | 128.6392875 | 127.56 | -0.21754 $ | -1.09 % | 9 s au moteur
-PEP | 143.9969625 | 143.42 | -0.13001 $ | -0.65 % | 11 s au moteur
-DIS | 120.3951675 | 120.48 | -0.03592 $ | -0.18 % | 10 s au moteur
-PG | 169.674795 | 173.179 | +0.36244 $ | +1.81 % | 13 s au moteur
-T | 22.13106 | 22.655 | +0.42279 $ | +2.11 % | 14 s au moteur
-KO | 96.8534025 | 99.33 | +0.46065 $ | +2.30 % | 12 s au moteur
-COST | 1076.848155 | 1113.76 | +0.63454 $ | +3.17 % | 23 s au moteur
+GC=F | 4151.37465 | 3872.7 | -1.39054 $ | -6.95 % | 613 s au moteur
+ADBE | 249.9899325 | 237.025 | -1.08567 $ | -5.43 % | 12 s au moteur
+GS | 921.6656025 | 879.68 | -0.95970 $ | -4.80 % | 14 s au moteur
+UBER | 71.245605 | 68.522 | -0.81341 $ | -4.07 % | 14 s au moteur
+SPY | 761.590605 | 734.33 | -0.76480 $ | -3.82 % | 17 s au moteur
+UNH | 408.38409 | 398.41 | -0.53772 $ | -2.69 % | 12 s au moteur
+MCD | 282.891375 | 277.204 | -0.45148 $ | -2.26 % | 16 s au moteur
+ABNB | 188.15403 | 184.51 | -0.43675 $ | -2.18 % | 13 s au moteur
+LLY | 1432.73601 | 1416.449 | -0.27700 $ | -1.39 % | 17 s au moteur
+AAPL | 355.207515 | 352.034 | -0.22841 $ | -1.14 % | 13 s au moteur
+WMT | 128.6392875 | 127.5 | -0.22685 $ | -1.13 % | 18 s au moteur
+PEP | 143.9969625 | 143.47 | -0.12307 $ | -0.62 % | 20 s au moteur
+DIS | 120.3951675 | 120.58 | -0.01933 $ | -0.10 % | 17 s au moteur
+PG | 169.674795 | 173.12 | +0.35550 $ | +1.78 % | 18 s au moteur
+T | 22.13106 | 22.645 | +0.41376 $ | +2.07 % | 13 s au moteur
+KO | 96.8534025 | 99.29 | +0.45241 $ | +2.26 % | 14 s au moteur
+COST | 1076.848155 | 1113.03 | +0.62100 $ | +3.10 % | 13 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-17T18:19:25+0100
+Dernier export du moteur utilisé : 2026-11-17T18:29:45+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
