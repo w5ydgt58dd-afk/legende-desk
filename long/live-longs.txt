@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-18T18:51:45+01:00 Europe/Paris
+Actualisé : 2026-11-18T18:52:45+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -3.4808 $ | 6 gagnants / 11 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -3.4083 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 989.7594 $ | tickets engagés 340.0000 $ | budget libre 649.7594 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 7 L | PnL réalisé -10.24 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GS | 921.6656025 | 873.057 | -1.10321 $ | -5.52 % | 359 s au moteur
-SPY | 761.590605 | 731.17 | -0.84766 $ | -4.24 % | 320 s au moteur
-MCD | 282.891375 | 273.62 | -0.70448 $ | -3.52 % | 363 s au moteur
-ABNB | 188.15403 | 182.61 | -0.63841 $ | -3.19 % | 345 s au moteur
-LLY | 1432.73601 | 1392.205 | -0.61493 $ | -3.07 % | 322 s au moteur
-UBER | 71.245605 | 69.48 | -0.54489 $ | -2.72 % | 323 s au moteur
-PEP | 143.9969625 | 142.18 | -0.30197 $ | -1.51 % | 320 s au moteur
-WMT | 128.6392875 | 127.11 | -0.28740 $ | -1.44 % | 317 s au moteur
-AAPL | 355.207515 | 353.43 | -0.14992 $ | -0.75 % | 320 s au moteur
-T | 22.13106 | 22.1 | -0.07802 $ | -0.39 % | 322 s au moteur
-AVGO | 350.124975 | 350.9 | -0.00579 $ | -0.03 % | 333 s au moteur
-PG | 169.674795 | 170.55 | +0.05302 $ | +0.27 % | 324 s au moteur
-KO | 96.8534025 | 98.015 | +0.18952 $ | +0.95 % | 332 s au moteur
-DIS | 120.3951675 | 121.885 | +0.19713 $ | +0.99 % | 320 s au moteur
-NG=F | 3.273636 | 3.343 | +0.37315 $ | +1.87 % | 918 s au moteur
-RIOT | 17.82891 | 18.235 | +0.40487 $ | +2.02 % | 340 s au moteur
-COST | 1076.848155 | 1110.72 | +0.57816 $ | +2.89 % | 328 s au moteur
+GS | 921.6656025 | 873.04 | -1.10358 $ | -5.52 % | 54 s au moteur
+SPY | 761.590605 | 731.635 | -0.83547 $ | -4.18 % | 30 s au moteur
+MCD | 282.891375 | 273.76 | -0.69460 $ | -3.47 % | 50 s au moteur
+ABNB | 188.15403 | 182.53 | -0.64690 $ | -3.23 % | 47 s au moteur
+LLY | 1432.73601 | 1392.115 | -0.61618 $ | -3.08 % | 30 s au moteur
+UBER | 71.245605 | 69.48 | -0.54489 $ | -2.72 % | 32 s au moteur
+WMT | 128.6392875 | 127.25 | -0.26566 $ | -1.33 % | 33 s au moteur
+PEP | 143.9969625 | 142.46 | -0.26314 $ | -1.32 % | 45 s au moteur
+AAPL | 355.207515 | 353.545 | -0.14346 $ | -0.72 % | 40 s au moteur
+T | 22.13106 | 22.14 | -0.04192 $ | -0.21 % | 31 s au moteur
+AVGO | 350.124975 | 351.26 | +0.01475 $ | +0.07 % | 32 s au moteur
+PG | 169.674795 | 170.67 | +0.06714 $ | +0.34 % | 44 s au moteur
+KO | 96.8534025 | 98.085 | +0.20395 $ | +1.02 % | 44 s au moteur
+DIS | 120.3951675 | 122.015 | +0.21869 $ | +1.09 % | 33 s au moteur
+RIOT | 17.82891 | 18.12 | +0.27606 $ | +1.38 % | 29 s au moteur
+NG=F | 3.273636 | 3.346 | +0.39145 $ | +1.96 % | 638 s au moteur
+COST | 1076.848155 | 1110.575 | +0.57547 $ | +2.88 % | 32 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-18T18:46:22+0100
+Dernier export du moteur utilisé : 2026-11-18T18:52:25+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
