@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-18T21:46:50+01:00 Europe/Paris
+Actualisé : 2026-11-18T21:49:33+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -3.4723 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -3.5047 $ | 7 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 989.7594 $ | tickets engagés 340.0000 $ | budget libre 649.7594 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 7 L | PnL réalisé -10.24 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-GS | 921.6656025 | 872.2 | -1.12178 $ | -5.61 % | 17 s au moteur
-SPY | 761.590605 | 730.831 | -0.85655 $ | -4.28 % | 17 s au moteur
-ABNB | 188.15403 | 181.46 | -0.76047 $ | -3.80 % | 19 s au moteur
-UBER | 71.245605 | 69.035 | -0.66962 $ | -3.35 % | 17 s au moteur
-LLY | 1432.73601 | 1388.636 | -0.66467 $ | -3.32 % | 20 s au moteur
-MCD | 282.891375 | 274.6 | -0.63530 $ | -3.18 % | 33 s au moteur
-PEP | 143.9969625 | 142 | -0.32694 $ | -1.63 % | 15 s au moteur
-WMT | 128.6392875 | 126.93 | -0.31534 $ | -1.58 % | 15 s au moteur
-AAPL | 355.207515 | 352.45 | -0.20502 $ | -1.03 % | 17 s au moteur
-T | 22.13106 | 22.005 | -0.16374 $ | -0.82 % | 16 s au moteur
-PG | 169.674795 | 170.63 | +0.06243 $ | +0.31 % | 17 s au moteur
-AVGO | 350.124975 | 353.71 | +0.15449 $ | +0.77 % | 15 s au moteur
-KO | 96.8534025 | 98.135 | +0.21426 $ | +1.07 % | 18 s au moteur
-RIOT | 17.82891 | 18.16 | +0.32086 $ | +1.60 % | 14 s au moteur
-DIS | 120.3951675 | 122.76 | +0.34227 $ | +1.71 % | 17 s au moteur
-COST | 1076.848155 | 1101.52 | +0.40755 $ | +2.04 % | 17 s au moteur
-NG=F | 3.273636 | 3.404 | +0.74526 $ | +3.73 % | 618 s au moteur
+GS | 921.6656025 | 872.295 | -1.11972 $ | -5.60 % | 129 s au moteur
+SPY | 761.590605 | 730.971 | -0.85288 $ | -4.26 % | 119 s au moteur
+ABNB | 188.15403 | 181.555 | -0.75039 $ | -3.75 % | 118 s au moteur
+LLY | 1432.73601 | 1387.76 | -0.67688 $ | -3.38 % | 120 s au moteur
+UBER | 71.245605 | 69.065 | -0.66121 $ | -3.31 % | 123 s au moteur
+MCD | 282.891375 | 274.565 | -0.63777 $ | -3.19 % | 121 s au moteur
+PEP | 143.9969625 | 141.99 | -0.32832 $ | -1.64 % | 116 s au moteur
+WMT | 128.6392875 | 126.9 | -0.32000 $ | -1.60 % | 118 s au moteur
+AAPL | 355.207515 | 352.49 | -0.20277 $ | -1.01 % | 126 s au moteur
+T | 22.13106 | 21.995 | -0.17276 $ | -0.86 % | 121 s au moteur
+PG | 169.674795 | 170.52 | +0.04949 $ | +0.25 % | 124 s au moteur
+AVGO | 350.124975 | 353.82 | +0.16076 $ | +0.80 % | 122 s au moteur
+KO | 96.8534025 | 98.115 | +0.21014 $ | +1.05 % | 121 s au moteur
+RIOT | 17.82891 | 18.14 | +0.29846 $ | +1.49 % | 117 s au moteur
+DIS | 120.3951675 | 122.79 | +0.34724 $ | +1.74 % | 116 s au moteur
+COST | 1076.848155 | 1101.47 | +0.40662 $ | +2.03 % | 120 s au moteur
+NG=F | 3.273636 | 3.404 | +0.74526 $ | +3.73 % | 732 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-18T21:46:32+0100
+Dernier export du moteur utilisé : 2026-11-18T21:47:32+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
