@@ -1,33 +1,33 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-20T18:55:37+01:00 Europe/Paris
+Actualisé : 2026-11-20T18:56:37+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-17 longs ouverts | latent total -7.1454 $ | 5 gagnants / 12 perdants (latent non encaissé, avec frais de sortie estimés)
+17 longs ouverts | latent total -7.1082 $ | 5 gagnants / 12 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 984.3339 $ | tickets engagés 340.0000 $ | budget libre 644.3339 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 11 L | PnL réalisé -15.67 $
 83 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-ABNB | 188.15403 | 172.07 | -1.75709 $ | -8.79 % | 315 s au moteur
-UBER | 71.245605 | 65.25 | -1.73055 $ | -8.65 % | 317 s au moteur
-SPY | 761.590605 | 699.96 | -1.66603 $ | -8.33 % | 315 s au moteur
-AMZN | 268.97442 | 249.98 | -1.46023 $ | -7.30 % | 314 s au moteur
-LLY | 1432.73601 | 1353.06 | -1.16054 $ | -5.80 % | 315 s au moteur
-PANW | 367.24353 | 349.94 | -0.99092 $ | -4.95 % | 318 s au moteur
-AAPL | 355.207515 | 345.58 | -0.59126 $ | -2.96 % | 316 s au moteur
-MCD | 282.891375 | 275.335 | -0.58341 $ | -2.92 % | 323 s au moteur
-DIS | 120.3951675 | 118.615 | -0.34527 $ | -1.73 % | 321 s au moteur
-PEP | 143.9969625 | 142.06 | -0.31861 $ | -1.59 % | 318 s au moteur
-PG | 169.674795 | 169.935 | -0.01936 $ | -0.10 % | 325 s au moteur
-TLT | 81.1855725 | 81.315 | -0.01815 $ | -0.09 % | 314 s au moteur
-KO | 96.8534025 | 97.57 | +0.09776 $ | +0.49 % | 315 s au moteur
-WMT | 128.6392875 | 129.66 | +0.10847 $ | +0.54 % | 314 s au moteur
-T | 22.13106 | 22.635 | +0.40474 $ | +2.02 % | 318 s au moteur
-COST | 1076.848155 | 1114.01 | +0.63917 $ | +3.20 % | 321 s au moteur
-NG=F | 3.273636 | 3.65 | +2.24593 $ | +11.23 % | 914 s au moteur
+UBER | 71.245605 | 65.17 | -1.75297 $ | -8.76 % | 29 s au moteur
+ABNB | 188.15403 | 172.12 | -1.75179 $ | -8.76 % | 32 s au moteur
+SPY | 761.590605 | 699.69 | -1.67311 $ | -8.37 % | 29 s au moteur
+AMZN | 268.97442 | 249.545 | -1.49253 $ | -7.46 % | 29 s au moteur
+LLY | 1432.73601 | 1351.99 | -1.17546 $ | -5.88 % | 32 s au moteur
+PANW | 367.24353 | 350.01 | -0.98712 $ | -4.94 % | 29 s au moteur
+AAPL | 355.207515 | 345.71 | -0.58395 $ | -2.92 % | 30 s au moteur
+MCD | 282.891375 | 275.59 | -0.56541 $ | -2.83 % | 64 s au moteur
+DIS | 120.3951675 | 118.69 | -0.33283 $ | -1.66 % | 29 s au moteur
+PEP | 143.9969625 | 142.14 | -0.30752 $ | -1.54 % | 29 s au moteur
+TLT | 81.1855725 | 81.335 | -0.01323 $ | -0.07 % | 33 s au moteur
+PG | 169.674795 | 170.02 | -0.00936 $ | -0.05 % | 60 s au moteur
+KO | 96.8534025 | 97.61 | +0.10601 $ | +0.53 % | 31 s au moteur
+WMT | 128.6392875 | 129.81 | +0.13175 $ | +0.66 % | 33 s au moteur
+T | 22.13106 | 22.639 | +0.40835 $ | +2.04 % | 33 s au moteur
+COST | 1076.848155 | 1113.995 | +0.63889 $ | +3.19 % | 41 s au moteur
+NG=F | 3.273636 | 3.651 | +2.25203 $ | +11.26 % | 632 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-20T18:50:42+0100
+Dernier export du moteur utilisé : 2026-11-20T18:56:17+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
