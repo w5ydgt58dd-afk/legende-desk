@@ -1,31 +1,31 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-23T19:48:11+01:00 Europe/Paris
+Actualisé : 2026-11-23T19:49:11+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-15 longs ouverts | latent total -4.0147 $ | 5 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
+15 longs ouverts | latent total -3.8326 $ | 5 gagnants / 10 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 980.3013 $ | tickets engagés 300.0000 $ | budget libre 680.3013 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 13 L | PnL réalisé -19.70 $
 85 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-SPY | 761.590605 | 721.75 | -1.09467 $ | -5.47 % | 25 s au moteur
-LLY | 1432.73601 | 1360.515 | -1.05663 $ | -5.28 % | 23 s au moteur
-AMZN | 268.97442 | 257.77 | -0.88186 $ | -4.41 % | 18 s au moteur
-PANW | 367.24353 | 352.475 | -0.85307 $ | -4.27 % | 19 s au moteur
-MCD | 282.891375 | 275.09 | -0.60071 $ | -3.00 % | 24 s au moteur
-PEP | 143.9969625 | 140.13 | -0.58627 $ | -2.93 % | 23 s au moteur
-AAPL | 355.207515 | 348.61 | -0.42091 $ | -2.10 % | 20 s au moteur
-KO | 96.8534025 | 95.88 | -0.25069 $ | -1.25 % | 19 s au moteur
-DIS | 120.3951675 | 119.62 | -0.17857 $ | -0.89 % | 33 s au moteur
-PG | 169.674795 | 169.98 | -0.01407 $ | -0.07 % | 20 s au moteur
-WMT | 128.6392875 | 129.135 | +0.02696 $ | +0.13 % | 31 s au moteur
-TLT | 81.1855725 | 81.52 | +0.03227 $ | +0.16 % | 18 s au moteur
-T | 22.13106 | 22.27 | +0.07538 $ | +0.38 % | 19 s au moteur
-COST | 1076.848155 | 1097.95 | +0.34134 $ | +1.71 % | 21 s au moteur
-NG=F | 3.273636 | 3.519 | +1.44679 $ | +7.23 % | 631 s au moteur
+SPY | 761.590605 | 722.08 | -1.08602 $ | -5.43 % | 18 s au moteur
+LLY | 1432.73601 | 1361.61 | -1.04137 $ | -5.21 % | 21 s au moteur
+AMZN | 268.97442 | 257.92 | -0.87073 $ | -4.35 % | 19 s au moteur
+PANW | 367.24353 | 352.62 | -0.84519 $ | -4.23 % | 21 s au moteur
+MCD | 282.891375 | 275.02 | -0.60565 $ | -3.03 % | 31 s au moteur
+PEP | 143.9969625 | 140.14 | -0.58489 $ | -2.92 % | 28 s au moteur
+AAPL | 355.207515 | 348.86 | -0.40685 $ | -2.03 % | 17 s au moteur
+KO | 96.8534025 | 95.875 | -0.25172 $ | -1.26 % | 23 s au moteur
+DIS | 120.3951675 | 119.69 | -0.16696 $ | -0.83 % | 24 s au moteur
+PG | 169.674795 | 169.98 | -0.01407 $ | -0.07 % | 31 s au moteur
+WMT | 128.6392875 | 129.14 | +0.02774 $ | +0.14 % | 24 s au moteur
+TLT | 81.1855725 | 81.52 | +0.03227 $ | +0.16 % | 33 s au moteur
+T | 22.13106 | 22.275 | +0.07989 $ | +0.40 % | 18 s au moteur
+COST | 1076.848155 | 1098.11 | +0.34431 $ | +1.72 % | 22 s au moteur
+NG=F | 3.273636 | 3.537 | +1.55660 $ | +7.78 % | 616 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-23T19:47:51+0100
+Dernier export du moteur utilisé : 2026-11-23T19:48:51+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
