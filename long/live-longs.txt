@@ -1,35 +1,35 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-27T18:46:33+01:00 Europe/Paris
+Actualisé : 2026-11-27T18:47:33+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
-19 longs ouverts | latent total +3.6703 $ | 11 gagnants / 8 perdants (latent non encaissé, avec frais de sortie estimés)
+19 longs ouverts | latent total +3.3829 $ | 12 gagnants / 7 perdants (latent non encaissé, avec frais de sortie estimés)
 Stack PAPER 978.2397 $ | tickets engagés 380.0000 $ | budget libre 598.2397 $ | ticket suivant 20.0000 $
 Clôturés (revendus par leur règle de sortie) : 0 W / 14 L | PnL réalisé -21.76 $
 81 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-SPY | 761.590605 | 726.09 | -0.98087 $ | -4.90 % | 236 s au moteur
-LLY | 1432.73601 | 1394.01 | -0.58977 $ | -2.95 % | 234 s au moteur
-PANW | 367.24353 | 361.89 | -0.34110 $ | -1.71 % | 237 s au moteur
-NKE | 37.3936875 | 37.41 | -0.04128 $ | -0.21 % | 232 s au moteur
-PLTR | 171.367641 | 171.5 | -0.03457 $ | -0.17 % | 232 s au moteur
-TSLA | 398.369085 | 398.87 | -0.02488 $ | -0.12 % | 240 s au moteur
-MCD | 282.891375 | 283.33 | -0.01903 $ | -0.10 % | 239 s au moteur
-TLT | 81.1855725 | 81.38 | -0.00216 $ | -0.01 % | 237 s au moteur
-PEP | 143.9969625 | 144.71 | +0.04890 $ | +0.24 % | 233 s au moteur
-AAPL | 355.207515 | 358.035 | +0.10897 $ | +0.54 % | 234 s au moteur
-KO | 96.8534025 | 97.795 | +0.14416 $ | +0.72 % | 235 s au moteur
-V | 424.73226 | 431.115 | +0.25011 $ | +1.25 % | 233 s au moteur
-F | 12.056025 | 12.28 | +0.32101 $ | +1.61 % | 232 s au moteur
-COST | 1076.848155 | 1098.805 | +0.35720 $ | +1.79 % | 240 s au moteur
-PG | 169.674795 | 173.28 | +0.37433 $ | +1.87 % | 241 s au moteur
-WMT | 128.6392875 | 132.9 | +0.61144 $ | +3.06 % | 232 s au moteur
-T | 22.13106 | 23.305 | +1.00932 $ | +5.05 % | 232 s au moteur
-DIS | 120.3951675 | 126.99 | +1.04390 $ | +5.22 % | 236 s au moteur
-NG=F | 3.273636 | 3.517 | +1.43459 $ | +7.17 % | 841 s au moteur
+SPY | 761.590605 | 725.488 | -0.99665 $ | -4.98 % | 30 s au moteur
+LLY | 1432.73601 | 1392.66 | -0.60858 $ | -3.04 % | 34 s au moteur
+PANW | 367.24353 | 361.785 | -0.34681 $ | -1.73 % | 29 s au moteur
+NKE | 37.3936875 | 37.27 | -0.11605 $ | -0.58 % | 28 s au moteur
+PLTR | 171.367641 | 171.37 | -0.04972 $ | -0.25 % | 29 s au moteur
+TSLA | 398.369085 | 398.4 | -0.04844 $ | -0.24 % | 28 s au moteur
+MCD | 282.891375 | 283.03 | -0.04020 $ | -0.20 % | 58 s au moteur
+TLT | 81.1855725 | 81.41 | +0.00521 $ | +0.03 % | 30 s au moteur
+PEP | 143.9969625 | 144.555 | +0.02740 $ | +0.14 % | 33 s au moteur
+KO | 96.8534025 | 97.68 | +0.12044 $ | +0.60 % | 30 s au moteur
+AAPL | 355.207515 | 358.26 | +0.12162 $ | +0.61 % | 37 s au moteur
+V | 424.73226 | 430.08 | +0.20145 $ | +1.01 % | 34 s au moteur
+F | 12.056025 | 12.29 | +0.33757 $ | +1.69 % | 28 s au moteur
+PG | 169.674795 | 173.065 | +0.34902 $ | +1.75 % | 35 s au moteur
+COST | 1076.848155 | 1099.755 | +0.37481 $ | +1.87 % | 35 s au moteur
+WMT | 128.6392875 | 132.92 | +0.61455 $ | +3.07 % | 30 s au moteur
+T | 22.13106 | 23.23 | +0.94164 $ | +4.71 % | 29 s au moteur
+DIS | 120.3951675 | 127.02 | +1.04887 $ | +5.24 % | 32 s au moteur
+NG=F | 3.273636 | 3.519 | +1.44679 $ | +7.23 % | 629 s au moteur
 
-Dernier export du moteur utilisé : 2026-11-27T18:42:36+0100
+Dernier export du moteur utilisé : 2026-11-27T18:47:13+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
 Interface Long Squeeze : cryptos rafraîchies chaque seconde dans le navigateur si Binance répond. Le site public et GitHub peuvent ajouter du délai.
 Aucune position, aucun réglage, aucune base de trading modifiés.
