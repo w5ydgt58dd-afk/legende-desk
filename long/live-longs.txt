@@ -1,5 +1,5 @@
 LONG SQUEEZE — RELEVÉ CONTINU (positions longues, achat d’actions haussières)
-Actualisé : 2026-11-27T17:42:01+01:00 Europe/Paris
+Actualisé : 2026-11-27T17:54:13+01:00 Europe/Paris
 PAPER — LIVE verrouillé — consultation en lecture seule
 Signal d’entrée (les 3 ensemble) : long si les 3 ensemble sur bougies 1h : (1) CASSURE dernier prix > plus haut des 20 bougies précédentes ET dernier > EMA20 > EMA50 ; (2) VOLUME bougie en cours ou dernière clôturée >= 2x la moyenne des 20 précédentes ET liquidité >= seuils MIN_DOLLAR_VOL ; (3) MOMENTUM +0,3 % sur 6 bougies ET prix > EMA20 journalière
 Reconstruction automatique toutes les 60 secondes. Prix cryptos : nouvelle demande au moment de cet export. Prix actions/matières : dernier prix disponible auprès du moteur.
@@ -9,25 +9,25 @@ Clôturés (revendus par leur règle de sortie) : 0 W / 14 L | PnL réalisé -21
 81 places libres sur 100. Nouveaux signaux frais : 0.
 
 symbole | entrée | dernier prix | latent net | % du ticket | fraîcheur source
-SPY | 761.590605 | 725.625 | -0.99306 $ | -4.97 % | 37 s au moteur
-PANW | 367.24353 | 356.43 | -0.63801 $ | -3.19 % | 28 s au moteur
-LLY | 1432.73601 | 1391.98 | -0.61806 $ | -3.09 % | 28 s au moteur
-NKE | 37.3936875 | 37.25 | -0.12673 $ | -0.63 % | 27 s au moteur
-MCD | 282.891375 | 282.091 | -0.10649 $ | -0.53 % | 46 s au moteur
-PEP | 143.9969625 | 143.96 | -0.05512 $ | -0.28 % | 40 s au moteur
-TSLA | 398.369085 | 398.72 | -0.03240 $ | -0.16 % | 34 s au moteur
-TLT | 81.1855725 | 81.275 | -0.02799 $ | -0.14 % | 30 s au moteur
-AAPL | 355.207515 | 357.15 | +0.05922 $ | +0.30 % | 35 s au moteur
-KO | 96.8534025 | 97.39 | +0.06065 $ | +0.30 % | 29 s au moteur
-PLTR | 171.367641 | 172.51 | +0.08313 $ | +0.42 % | 27 s au moteur
-V | 424.73226 | 430.66 | +0.22872 $ | +1.14 % | 28 s au moteur
-COST | 1076.848155 | 1093.685 | +0.26225 $ | +1.31 % | 44 s au moteur
-PG | 169.674795 | 172.48 | +0.28017 $ | +1.40 % | 44 s au moteur
-F | 12.056025 | 12.275 | +0.31273 $ | +1.56 % | 28 s au moteur
-WMT | 128.6392875 | 132.11 | +0.48880 $ | +2.44 % | 39 s au moteur
-T | 22.13106 | 23.165 | +0.88299 $ | +4.41 % | 35 s au moteur
-DIS | 120.3951675 | 126.75 | +1.00409 $ | +5.02 % | 31 s au moteur
-NG=F | 3.273636 | 3.505 | +1.36139 $ | +6.81 % | 634 s au moteur
+SPY | 761.590605 | 725.625 | -0.99306 $ | -4.97 % | 729 s au moteur
+PANW | 367.24353 | 356.43 | -0.63801 $ | -3.19 % | 738 s au moteur
+LLY | 1432.73601 | 1391.98 | -0.61806 $ | -3.09 % | 733 s au moteur
+NKE | 37.3936875 | 37.25 | -0.12673 $ | -0.63 % | 729 s au moteur
+MCD | 282.891375 | 282.091 | -0.10649 $ | -0.53 % | 733 s au moteur
+PEP | 143.9969625 | 143.96 | -0.05512 $ | -0.28 % | 739 s au moteur
+TSLA | 398.369085 | 398.72 | -0.03240 $ | -0.16 % | 728 s au moteur
+TLT | 81.1855725 | 81.275 | -0.02799 $ | -0.14 % | 730 s au moteur
+AAPL | 355.207515 | 357.15 | +0.05922 $ | +0.30 % | 731 s au moteur
+KO | 96.8534025 | 97.39 | +0.06065 $ | +0.30 % | 732 s au moteur
+PLTR | 171.367641 | 172.51 | +0.08313 $ | +0.42 % | 729 s au moteur
+V | 424.73226 | 430.66 | +0.22872 $ | +1.14 % | 728 s au moteur
+COST | 1076.848155 | 1093.685 | +0.26225 $ | +1.31 % | 733 s au moteur
+PG | 169.674795 | 172.48 | +0.28017 $ | +1.40 % | 734 s au moteur
+F | 12.056025 | 12.275 | +0.31273 $ | +1.56 % | 733 s au moteur
+WMT | 128.6392875 | 132.11 | +0.48880 $ | +2.44 % | 731 s au moteur
+T | 22.13106 | 23.165 | +0.88299 $ | +4.41 % | 729 s au moteur
+DIS | 120.3951675 | 126.75 | +1.00409 $ | +5.02 % | 733 s au moteur
+NG=F | 3.273636 | 3.505 | +1.36139 $ | +6.81 % | 1346 s au moteur
 
 Dernier export du moteur utilisé : 2026-11-27T17:42:01+0100
 Le nominal de ce TXT n’est pas celui des performances encaissées. Ne jamais confondre latent et clôtures réalisées.
